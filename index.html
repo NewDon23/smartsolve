@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html lang="en"
+  class="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable h-full antialiased"
+  data-scrapbook-adoptedstylesheets="0" data-scrapbook-source="https://www.smartsolvedefi.xyz/dashboard"
+  data-scrapbook-create="20260720234030048" data-scrapbook-adoptedstylesheet-1=":host { z-index: var(--apkt-tokens-core-zIndex); display: block; backface-visibility: hidden; position: fixed; inset: 0px; pointer-events: none; opacity: 0; background-color: var(--apkt-tokens-theme-overlay); backdrop-filter: blur(0px); transition: opacity var(--apkt-durations-lg) var(--apkt-easings-ease-out-power-2),
+      backdrop-filter var(--apkt-durations-lg)
+        var(--apkt-easings-ease-out-power-2); will-change: opacity; }
+
+:host(.open) { opacity: 1; backdrop-filter: blur(8px); }
+
+:host(.appkit-modal) { position: relative; pointer-events: unset; background: none; width: 100%; opacity: 1; }
+
+wui-card { max-width: var(--apkt-modal-width); width: 100%; position: relative; outline: none; transform: translateY(4px); box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 8px 0px; transition: transform var(--apkt-durations-lg)
+        var(--apkt-easings-ease-out-power-2),
+      border-radius var(--apkt-durations-lg)
+        var(--apkt-easings-ease-out-power-1),
+      background-color var(--apkt-durations-lg)
+        var(--apkt-easings-ease-out-power-1),
+      box-shadow var(--apkt-durations-lg)
+        var(--apkt-easings-ease-out-power-1); will-change: border-radius, background-color, transform, box-shadow; background-color: var(--apkt-tokens-theme-backgroundPrimary); padding: var(--local-modal-padding); box-sizing: border-box; }
+
+:host(.open) wui-card { transform: translateY(0px); }
+
+wui-card::before { z-index: 1; pointer-events: none; content: &quot;&quot;; position: absolute; inset: 0px; border-radius: clamp(0px, var(--apkt-borderRadius-8), 44px); transition-property: ; transition-duration: ; transition-timing-function: ; transition-behavior: ; transition-delay: var(--apkt-durations-md); will-change: box-shadow; }
+
+:host([data-mobile-fullscreen=&quot;true&quot;]) wui-card::before { border-radius: 0px; }
+
+:host([data-border=&quot;true&quot;]) wui-card::before { box-shadow: inset 0px 0px 0px 4px var(--apkt-tokens-theme-foregroundSecondary); }
+
+:host([data-border=&quot;false&quot;]) wui-card::before { box-shadow: inset 0px 0px 0px 1px var(--apkt-tokens-theme-borderPrimaryDark); }
+
+:host([data-border=&quot;true&quot;]) wui-card { animation-name: ; animation-duration: ; animation-timing-function: ; animation-iteration-count: ; animation-direction: ; animation-play-state: ; animation-fill-mode: backwards, both; animation-delay: var(--apkt-duration-dynamic); }
+
+:host([data-border=&quot;false&quot;]) wui-card { animation-name: ; animation-duration: ; animation-timing-function: ; animation-iteration-count: ; animation-direction: ; animation-play-state: ; animation-fill-mode: backwards, both; animation-delay: 0s; }
+
+:host(.appkit-modal) wui-card { max-width: var(--apkt-modal-width); }
+
+wui-card[shake=&quot;true&quot;] { animation: fade-in var(--apkt-durations-lg) var(--apkt-easings-ease-out-power-2),
+      w3m-shake var(--apkt-durations-xl)
+        var(--apkt-easings-ease-out-power-2); }
+
+wui-flex { overflow: hidden auto; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+
+@media (max-height: 700px) and (min-width: 431px) {
+  wui-flex { align-items: flex-start; }
+  wui-card { margin: var(--apkt-spacing-6) 0px; }
+}
+
+@media (max-width: 430px) {
+  :host([data-mobile-fullscreen=&quot;true&quot;]) { height: 100dvh; }
+  :host([data-mobile-fullscreen=&quot;true&quot;]) wui-flex { align-items: stretch; }
+  :host([data-mobile-fullscreen=&quot;true&quot;]) wui-card { max-width: 100%; height: 100%; border-radius: 0px; border: medium; }
+  :host(:not([data-mobile-fullscreen=&quot;true&quot;])) wui-flex { align-items: flex-end; }
+  :host(:not([data-mobile-fullscreen=&quot;true&quot;])) wui-card { max-width: 100%; border-bottom: medium; }
+  :host(:not([data-mobile-fullscreen=&quot;true&quot;])) wui-card[data-embedded=&quot;true&quot;] { border-bottom-left-radius: clamp(0px, var(--apkt-borderRadius-8), 44px); border-bottom-right-radius: clamp(0px, var(--apkt-borderRadius-8), 44px); }
+  :host(:not([data-mobile-fullscreen=&quot;true&quot;])) wui-card:not([data-embedded=&quot;true&quot;]) { border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; }
+  wui-card[shake=&quot;true&quot;] { animation: w3m-shake 0.5s var(--apkt-easings-ease-out-power-2); }
+}
+
+@keyframes fade-in {
+  0% { transform: scale(0.99) translateY(4px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+@keyframes w3m-shake {
+  0% { transform: scale(1) rotate(0deg); }
+  20% { transform: scale(1) rotate(-1deg); }
+  40% { transform: scale(1) rotate(1.5deg); }
+  60% { transform: scale(1) rotate(-1.5deg); }
+  80% { transform: scale(1) rotate(1deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes card-background-border {
+  0% { background-color: var(--apkt-tokens-theme-backgroundPrimary); }
+  100% { background-color: var(--apkt-tokens-theme-foregroundSecondary); }
+}
+
+@keyframes card-background-default {
+  0% { background-color: var(--apkt-tokens-theme-foregroundSecondary); }
+  100% { background-color: var(--apkt-tokens-theme-backgroundPrimary); }
+}"
+  data-scrapbook-adoptedstylesheet-0="@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 400; unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 400; unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 400; unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 400; unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 400; unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 400; unicode-range: U+100-2AF, U+304, U+308, U+329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 400; unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 500; unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 500; unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 500; unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 500; unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 500; unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 500; unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 500; unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 600; unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 600; unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 600; unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 600; unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 600; unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 600; unicode-range: U+100-2AF, U+304, U+308, U+329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; src: url(&quot;&quot;) format(&quot;woff2&quot;); font-style: normal; font-weight: 600; unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="0-_tbw47al1yv.css" data-precedence="next">
+  <meta name="next-size-adjust" content="">
+  <title>Smart Solve Defi</title>
+  <meta name="description"
+    content="Smart Solve is a next-generation DeFi ecosystem designed to bring transparency, security, and long-term value to the world of decentralized finance.">
+  <link rel="icon" href="favicon.ico" sizes="48x48" type="image/x-icon">
+  <style id="_goober">
+    @keyframes go2264125279 {
+      from {
+        transform: scale(0) rotate(45deg);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1) rotate(45deg);
+        opacity: 1;
+      }
+    }
+
+    @keyframes go3020080000 {
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes go463499852 {
+      from {
+        transform: scale(0) rotate(90deg);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1) rotate(90deg);
+        opacity: 1;
+      }
+    }
+
+    @keyframes go1268368563 {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes go1310225428 {
+      from {
+        transform: scale(0) rotate(45deg);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1) rotate(45deg);
+        opacity: 1;
+      }
+    }
+
+    @keyframes go651618207 {
+      0% {
+        height: 0;
+        width: 0;
+        opacity: 0;
+      }
+
+      40% {
+        height: 0;
+        width: 6px;
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 1;
+        height: 10px;
+      }
+    }
+
+    @keyframes go901347462 {
+      from {
+        transform: scale(0.6);
+        opacity: 0.4;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .go4109123758 {
+      z-index: 9999;
+    }
+
+    .go4109123758>* {
+      pointer-events: auto;
+    }
+  </style>
+  <style>
+    @font-face {
+      font-family: 'KHTeka';
+      src:
+        url("") format('woff2'),
+        url("") format('woff');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'KHTeka';
+      src:
+        url("") format('woff2'),
+        url("") format('woff');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'KHTekaMono';
+      src:
+        url("") format('woff2'),
+        url("") format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'KHTeka';
+      src:
+        url("") format('woff2'),
+        url("") format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+
+    @keyframes w3m-shake {
+      0% {
+        transform: scale(1) rotate(0deg);
+      }
+
+      20% {
+        transform: scale(1) rotate(-1deg);
+      }
+
+      40% {
+        transform: scale(1) rotate(1.5deg);
+      }
+
+      60% {
+        transform: scale(1) rotate(-1.5deg);
+      }
+
+      80% {
+        transform: scale(1) rotate(1deg);
+      }
+
+      100% {
+        transform: scale(1) rotate(0deg);
+      }
+    }
+
+    @keyframes w3m-iframe-fade-out {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes w3m-iframe-zoom-in {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+
+    @keyframes w3m-iframe-zoom-in-mobile {
+      0% {
+        transform: scale(0.95);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    :root {
+      --apkt-modal-width: 370px;
+
+      --apkt-visual-size-inherit: inherit;
+      --apkt-visual-size-sm: 40px;
+      --apkt-visual-size-md: 55px;
+      --apkt-visual-size-lg: 80px;
+
+      --apkt-path-network-sm: path('M15.4 2.1a5.21 5.21 0 0 1 5.2 0l11.61 6.7a5.21 5.21 0 0 1 2.61 4.52v13.4c0 1.87-1 3.59-2.6 4.52l-11.61 6.7c-1.62.93-3.6.93-5.22 0l-11.6-6.7a5.21 5.21 0 0 1-2.61-4.51v-13.4c0-1.87 1-3.6 2.6-4.52L15.4 2.1Z'
+        );
+
+      --apkt-path-network-md: path('M43.4605 10.7248L28.0485 1.61089C25.5438 0.129705 22.4562 0.129705 19.9515 1.61088L4.53951 10.7248C2.03626 12.2051 0.5 14.9365 0.5 17.886V36.1139C0.5 39.0635 2.03626 41.7949 4.53951 43.2752L19.9515 52.3891C22.4562 53.8703 25.5438 53.8703 28.0485 52.3891L43.4605 43.2752C45.9637 41.7949 47.5 39.0635 47.5 36.114V17.8861C47.5 14.9365 45.9637 12.2051 43.4605 10.7248Z'
+        );
+
+      --apkt-path-network-lg: path('M78.3244 18.926L50.1808 2.45078C45.7376 -0.150261 40.2624 -0.150262 35.8192 2.45078L7.6756 18.926C3.23322 21.5266 0.5 26.3301 0.5 31.5248V64.4752C0.5 69.6699 3.23322 74.4734 7.6756 77.074L35.8192 93.5492C40.2624 96.1503 45.7376 96.1503 50.1808 93.5492L78.3244 77.074C82.7668 74.4734 85.5 69.6699 85.5 64.4752V31.5248C85.5 26.3301 82.7668 21.5266 78.3244 18.926Z'
+        );
+
+      --apkt-width-network-sm: 36px;
+      --apkt-width-network-md: 48px;
+      --apkt-width-network-lg: 86px;
+
+      --apkt-duration-dynamic: 0ms;
+      --apkt-height-network-sm: 40px;
+      --apkt-height-network-md: 54px;
+      --apkt-height-network-lg: 96px;
+    }
+  </style>
+  <style media="enabled">
+    :root {}
+  </style>
+  <style>
+    :root {}
+  </style>
+  <style>
+    :root {
+      --apkt-colors-black: #202020;
+      --apkt-colors-white: #FFFFFF;
+      --apkt-colors-white010: rgba(255, 255, 255, 0.1);
+      --apkt-colors-accent010: rgba(9, 136, 240, 0.1);
+      --apkt-colors-accent020: rgba(9, 136, 240, 0.2);
+      --apkt-colors-accent030: rgba(9, 136, 240, 0.3);
+      --apkt-colors-accent040: rgba(9, 136, 240, 0.4);
+      --apkt-colors-accent050: rgba(9, 136, 240, 0.5);
+      --apkt-colors-accent060: rgba(9, 136, 240, 0.6);
+      --apkt-colors-accent070: rgba(9, 136, 240, 0.7);
+      --apkt-colors-accent080: rgba(9, 136, 240, 0.8);
+      --apkt-colors-accent090: rgba(9, 136, 240, 0.9);
+      --apkt-colors-accent100: rgba(9, 136, 240, 1.0);
+      --apkt-colors-accentSecondary010: rgba(199, 185, 148, 0.1);
+      --apkt-colors-accentSecondary020: rgba(199, 185, 148, 0.2);
+      --apkt-colors-accentSecondary030: rgba(199, 185, 148, 0.3);
+      --apkt-colors-accentSecondary040: rgba(199, 185, 148, 0.4);
+      --apkt-colors-accentSecondary050: rgba(199, 185, 148, 0.5);
+      --apkt-colors-accentSecondary060: rgba(199, 185, 148, 0.6);
+      --apkt-colors-accentSecondary070: rgba(199, 185, 148, 0.7);
+      --apkt-colors-accentSecondary080: rgba(199, 185, 148, 0.8);
+      --apkt-colors-accentSecondary090: rgba(199, 185, 148, 0.9);
+      --apkt-colors-accentSecondary100: rgba(199, 185, 148, 1.0);
+      --apkt-colors-productWalletKit: #FFB800;
+      --apkt-colors-productAppKit: #FF573B;
+      --apkt-colors-productCloud: #0988F0;
+      --apkt-colors-productDocumentation: #008847;
+      --apkt-colors-neutrals050: #F6F6F6;
+      --apkt-colors-neutrals100: #F3F3F3;
+      --apkt-colors-neutrals200: #E9E9E9;
+      --apkt-colors-neutrals300: #D0D0D0;
+      --apkt-colors-neutrals400: #BBB;
+      --apkt-colors-neutrals500: #9A9A9A;
+      --apkt-colors-neutrals600: #6C6C6C;
+      --apkt-colors-neutrals700: #4F4F4F;
+      --apkt-colors-neutrals800: #363636;
+      --apkt-colors-neutrals900: #2A2A2A;
+      --apkt-colors-neutrals1000: #252525;
+      --apkt-colors-semanticSuccess010: rgba(48, 164, 107, 0.1);
+      --apkt-colors-semanticSuccess020: rgba(48, 164, 107, 0.2);
+      --apkt-colors-semanticSuccess030: rgba(48, 164, 107, 0.3);
+      --apkt-colors-semanticSuccess040: rgba(48, 164, 107, 0.4);
+      --apkt-colors-semanticSuccess050: rgba(48, 164, 107, 0.5);
+      --apkt-colors-semanticSuccess060: rgba(48, 164, 107, 0.6);
+      --apkt-colors-semanticSuccess070: rgba(48, 164, 107, 0.7);
+      --apkt-colors-semanticSuccess080: rgba(48, 164, 107, 0.8);
+      --apkt-colors-semanticSuccess090: rgba(48, 164, 107, 0.9);
+      --apkt-colors-semanticSuccess100: rgba(48, 164, 107, 1.0);
+      --apkt-colors-semanticError010: rgba(223, 74, 52, 0.1);
+      --apkt-colors-semanticError020: rgba(223, 74, 52, 0.2);
+      --apkt-colors-semanticError030: rgba(223, 74, 52, 0.3);
+      --apkt-colors-semanticError040: rgba(223, 74, 52, 0.4);
+      --apkt-colors-semanticError050: rgba(223, 74, 52, 0.5);
+      --apkt-colors-semanticError060: rgba(223, 74, 52, 0.6);
+      --apkt-colors-semanticError070: rgba(223, 74, 52, 0.7);
+      --apkt-colors-semanticError080: rgba(223, 74, 52, 0.8);
+      --apkt-colors-semanticError090: rgba(223, 74, 52, 0.9);
+      --apkt-colors-semanticError100: rgba(223, 74, 52, 1.0);
+      --apkt-colors-semanticWarning010: rgba(243, 161, 63, 0.1);
+      --apkt-colors-semanticWarning020: rgba(243, 161, 63, 0.2);
+      --apkt-colors-semanticWarning030: rgba(243, 161, 63, 0.3);
+      --apkt-colors-semanticWarning040: rgba(243, 161, 63, 0.4);
+      --apkt-colors-semanticWarning050: rgba(243, 161, 63, 0.5);
+      --apkt-colors-semanticWarning060: rgba(243, 161, 63, 0.6);
+      --apkt-colors-semanticWarning070: rgba(243, 161, 63, 0.7);
+      --apkt-colors-semanticWarning080: rgba(243, 161, 63, 0.8);
+      --apkt-colors-semanticWarning090: rgba(243, 161, 63, 0.9);
+      --apkt-colors-semanticWarning100: rgba(243, 161, 63, 1.0);
+      --apkt-fontFamily-regular: KHTeka;
+      --apkt-fontFamily-mono: KHTekaMono;
+      --apkt-fontWeight-regular: 400;
+      --apkt-fontWeight-medium: 500;
+      --apkt-textSize-h1: 50px;
+      --apkt-textSize-h2: 44px;
+      --apkt-textSize-h3: 38px;
+      --apkt-textSize-h4: 32px;
+      --apkt-textSize-h5: 26px;
+      --apkt-textSize-h6: 20px;
+      --apkt-textSize-large: 16px;
+      --apkt-textSize-medium: 14px;
+      --apkt-textSize-small: 12px;
+      --apkt-typography-h1-regular-mono-lineHeight: 50px;
+      --apkt-typography-h1-regular-mono-letterSpacing: -3px;
+      --apkt-typography-h1-regular-lineHeight: 50px;
+      --apkt-typography-h1-regular-letterSpacing: -1px;
+      --apkt-typography-h1-medium-lineHeight: 50px;
+      --apkt-typography-h1-medium-letterSpacing: -0.84px;
+      --apkt-typography-h2-regular-mono-lineHeight: 44px;
+      --apkt-typography-h2-regular-mono-letterSpacing: -2.64px;
+      --apkt-typography-h2-regular-lineHeight: 44px;
+      --apkt-typography-h2-regular-letterSpacing: -0.88px;
+      --apkt-typography-h2-medium-lineHeight: 44px;
+      --apkt-typography-h2-medium-letterSpacing: -0.88px;
+      --apkt-typography-h3-regular-mono-lineHeight: 38px;
+      --apkt-typography-h3-regular-mono-letterSpacing: -2.28px;
+      --apkt-typography-h3-regular-lineHeight: 38px;
+      --apkt-typography-h3-regular-letterSpacing: -0.76px;
+      --apkt-typography-h3-medium-lineHeight: 38px;
+      --apkt-typography-h3-medium-letterSpacing: -0.76px;
+      --apkt-typography-h4-regular-mono-lineHeight: 32px;
+      --apkt-typography-h4-regular-mono-letterSpacing: -1.92px;
+      --apkt-typography-h4-regular-lineHeight: 32px;
+      --apkt-typography-h4-regular-letterSpacing: -0.32px;
+      --apkt-typography-h4-medium-lineHeight: 32px;
+      --apkt-typography-h4-medium-letterSpacing: -0.32px;
+      --apkt-typography-h5-regular-mono-lineHeight: 26px;
+      --apkt-typography-h5-regular-mono-letterSpacing: -1.56px;
+      --apkt-typography-h5-regular-lineHeight: 26px;
+      --apkt-typography-h5-regular-letterSpacing: -0.26px;
+      --apkt-typography-h5-medium-lineHeight: 26px;
+      --apkt-typography-h5-medium-letterSpacing: -0.26px;
+      --apkt-typography-h6-regular-mono-lineHeight: 20px;
+      --apkt-typography-h6-regular-mono-letterSpacing: -1.2px;
+      --apkt-typography-h6-regular-lineHeight: 20px;
+      --apkt-typography-h6-regular-letterSpacing: -0.6px;
+      --apkt-typography-h6-medium-lineHeight: 20px;
+      --apkt-typography-h6-medium-letterSpacing: -0.6px;
+      --apkt-typography-lg-regular-mono-lineHeight: 16px;
+      --apkt-typography-lg-regular-mono-letterSpacing: -0.96px;
+      --apkt-typography-lg-regular-lineHeight: 18px;
+      --apkt-typography-lg-regular-letterSpacing: -0.16px;
+      --apkt-typography-lg-medium-lineHeight: 18px;
+      --apkt-typography-lg-medium-letterSpacing: -0.16px;
+      --apkt-typography-md-regular-mono-lineHeight: 14px;
+      --apkt-typography-md-regular-mono-letterSpacing: -0.84px;
+      --apkt-typography-md-regular-lineHeight: 16px;
+      --apkt-typography-md-regular-letterSpacing: -0.14px;
+      --apkt-typography-md-medium-lineHeight: 16px;
+      --apkt-typography-md-medium-letterSpacing: -0.14px;
+      --apkt-typography-sm-regular-mono-lineHeight: 12px;
+      --apkt-typography-sm-regular-mono-letterSpacing: -0.72px;
+      --apkt-typography-sm-regular-lineHeight: 14px;
+      --apkt-typography-sm-regular-letterSpacing: -0.12px;
+      --apkt-typography-sm-medium-lineHeight: 14px;
+      --apkt-typography-sm-medium-letterSpacing: -0.12px;
+      --apkt-tokens-core-backgroundAccentPrimary: var(--apkt-tokens-core-backgroundAccentPrimary-base);
+      --apkt-tokens-core-backgroundAccentCertified: #C7B994;
+      --apkt-tokens-core-backgroundWalletKit: #FFB800;
+      --apkt-tokens-core-backgroundAppKit: #FF573B;
+      --apkt-tokens-core-backgroundCloud: #0988F0;
+      --apkt-tokens-core-backgroundDocumentation: #008847;
+      --apkt-tokens-core-backgroundSuccess: rgba(48, 164, 107, 0.20);
+      --apkt-tokens-core-backgroundError: rgba(223, 74, 52, 0.20);
+      --apkt-tokens-core-backgroundWarning: rgba(243, 161, 63, 0.20);
+      --apkt-tokens-core-textAccentPrimary: #0988F0;
+      --apkt-tokens-core-textAccentCertified: #C7B994;
+      --apkt-tokens-core-textWalletKit: #FFB800;
+      --apkt-tokens-core-textAppKit: #FF573B;
+      --apkt-tokens-core-textCloud: #0988F0;
+      --apkt-tokens-core-textDocumentation: #008847;
+      --apkt-tokens-core-textSuccess: #30A46B;
+      --apkt-tokens-core-textError: #DF4A34;
+      --apkt-tokens-core-textWarning: #F3A13F;
+      --apkt-tokens-core-borderAccentPrimary: #0988F0;
+      --apkt-tokens-core-borderSecondary: #C7B994;
+      --apkt-tokens-core-borderSuccess: #30A46B;
+      --apkt-tokens-core-borderError: #DF4A34;
+      --apkt-tokens-core-borderWarning: #F3A13F;
+      --apkt-tokens-core-foregroundAccent010: rgba(9, 136, 240, 0.1);
+      --apkt-tokens-core-foregroundAccent020: rgba(9, 136, 240, 0.2);
+      --apkt-tokens-core-foregroundAccent040: rgba(9, 136, 240, 0.4);
+      --apkt-tokens-core-foregroundAccent060: rgba(9, 136, 240, 0.6);
+      --apkt-tokens-core-foregroundSecondary020: rgba(199, 185, 148, 0.2);
+      --apkt-tokens-core-foregroundSecondary040: rgba(199, 185, 148, 0.4);
+      --apkt-tokens-core-foregroundSecondary060: rgba(199, 185, 148, 0.6);
+      --apkt-tokens-core-iconAccentPrimary: #0988F0;
+      --apkt-tokens-core-iconAccentCertified: #C7B994;
+      --apkt-tokens-core-iconSuccess: #30A46B;
+      --apkt-tokens-core-iconError: #DF4A34;
+      --apkt-tokens-core-iconWarning: #F3A13F;
+      --apkt-tokens-core-glass010: rgba(255, 255, 255, 0.1);
+      --apkt-tokens-core-zIndex: 9999;
+      --apkt-tokens-theme-overlay: rgba(0, 0, 0, 0.50);
+      --apkt-tokens-theme-backgroundPrimary: var(--apkt-tokens-theme-backgroundPrimary-base);
+      --apkt-tokens-theme-backgroundInvert: #FFFFFF;
+      --apkt-tokens-theme-textPrimary: #FFFFFF;
+      --apkt-tokens-theme-textSecondary: #9A9A9A;
+      --apkt-tokens-theme-textTertiary: #BBBBBB;
+      --apkt-tokens-theme-textInvert: #202020;
+      --apkt-tokens-theme-borderPrimary: #2A2A2A;
+      --apkt-tokens-theme-borderPrimaryDark: #363636;
+      --apkt-tokens-theme-borderSecondary: #4F4F4F;
+      --apkt-tokens-theme-foregroundPrimary: #252525;
+      --apkt-tokens-theme-foregroundSecondary: #2A2A2A;
+      --apkt-tokens-theme-foregroundTertiary: #363636;
+      --apkt-tokens-theme-iconDefault: #9A9A9A;
+      --apkt-tokens-theme-iconInverse: #FFFFFF;
+      --apkt-borderRadius-1: 4px;
+      --apkt-borderRadius-2: 8px;
+      --apkt-borderRadius-3: 12px;
+      --apkt-borderRadius-4: 16px;
+      --apkt-borderRadius-5: 20px;
+      --apkt-borderRadius-6: 24px;
+      --apkt-borderRadius-8: 32px;
+      --apkt-borderRadius-10: 10px;
+      --apkt-borderRadius-16: 64px;
+      --apkt-borderRadius-20: 80px;
+      --apkt-borderRadius-32: 128px;
+      --apkt-borderRadius-64: 256px;
+      --apkt-borderRadius-128: 512px;
+      --apkt-borderRadius-round: 9999px;
+      --apkt-spacing-0: 0px;
+      --apkt-spacing-1: 4px;
+      --apkt-spacing-2: 8px;
+      --apkt-spacing-3: 12px;
+      --apkt-spacing-4: 16px;
+      --apkt-spacing-5: 20px;
+      --apkt-spacing-6: 24px;
+      --apkt-spacing-7: 28px;
+      --apkt-spacing-8: 32px;
+      --apkt-spacing-9: 36px;
+      --apkt-spacing-10: 40px;
+      --apkt-spacing-12: 48px;
+      --apkt-spacing-14: 56px;
+      --apkt-spacing-16: 64px;
+      --apkt-spacing-20: 80px;
+      --apkt-spacing-32: 128px;
+      --apkt-spacing-64: 256px;
+      --apkt-spacing-01: 2px;
+      --apkt-durations-xl: 400ms;
+      --apkt-durations-lg: 200ms;
+      --apkt-durations-md: 125ms;
+      --apkt-durations-sm: 75ms;
+      --apkt-easings-ease-out-power-2: cubic-bezier(0.23, 0.09, 0.08, 1.13);
+      --apkt-easings-ease-out-power-1: cubic-bezier(0.12, 0.04, 0.2, 1.06);
+      --apkt-easings-ease-in-power-2: cubic-bezier(0.92, -0.13, 0.77, 0.91);
+      --apkt-easings-ease-in-power-1: cubic-bezier(0.88, -0.06, 0.8, 0.96);
+      --apkt-easings-ease-inout-power-2: cubic-bezier(0.77, 0.09, 0.23, 1.13);
+      --apkt-easings-ease-inout-power-1: cubic-bezier(0.88, 0.04, 0.12, 1.06);
+      --apkt-tokens-theme-backgroundPrimary-base: #202020;
+      --apkt-tokens-core-backgroundAccentPrimary-base: #0988F0;
+      --w3m-font-family: KHTeka;
+      --w3m-accent: #0988F0;
+      --w3m-color-mix: #000;
+      --w3m-color-mix-strength: 0%;
+      --w3m-font-size-master: 10px;
+      --w3m-border-radius-master: 4px;
+    }
+  </style>
+  <script
+    data-scrapbook-elem="custom-elements-loader">(function (names) { if (!customElements) { return; } for (const name of names) { customElements.define(name, class CustomElement extends HTMLElement { }); } })(["djj-arhowraadhra", "next-route-announcer", "w3m-modal"])</script>
+</head>
+
+<body class="min-h-full flex flex-col">
+  <div hidden=""><!--$--><!--/$--></div>
+  <style>
+    @import url("css2.css");
+
+    /* ── Grid background — cyan tinted for Smart Solve ── */
+    .ss-main-bg {
+      background-color: #030810;
+      background-image:
+        linear-gradient(rgba(56, 189, 248, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56, 189, 248, 0.025) 1px, transparent 1px);
+      background-size: 56px 56px;
+    }
+
+    /* ── AppKit button override ── */
+    .smartsolve-appkit-btn w3m-button,
+    .smartsolve-appkit-btn appkit-button {
+      --wui-color-accent-base-100: #38bdf8 !important;
+      --wui-border-radius-m: 10px !important;
+    }
+
+    /* scrollbar */
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(56, 189, 248, 0.2);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(56, 189, 248, 0.4);
+    }
+  </style>
+  <div class="ss-main-bg min-h-screen text-slate-200" style="font-family: &quot;Rajdhani&quot;, sans-serif;">
+    <aside class="hidden lg:flex flex-col fixed top-0 left-0 h-screen z-40 transition-all duration-300"
+      style="width: 248px; padding: 24px 16px; background: linear-gradient(rgb(6, 13, 28) 0%, rgb(4, 8, 16) 100%); border-right: 1px solid rgba(56, 189, 248, 0.07); backdrop-filter: blur(20px);">
+      <div
+        class="pointer-events-none absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-cyan-400/[0.05] to-transparent">
+      </div>
+      <div class="flex flex-col h-full">
+        <div class="flex items-center mb-8 justify-between"><a href="https://www.smartsolvedefi.xyz/">
+            <div class="flex items-center gap-3 overflow-hidden transition-all duration-300 ">
+              <div class="relative shrink-0 w-9 h-9">
+                <div class="absolute inset-0 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 opacity-25 blur-md">
+                </div>
+                <div
+                  class="relative w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-[0_0_16px_rgba(6,182,212,0.5)]">
+                  <img alt="Smart Solve DeFi" loading="lazy" width="28" height="28" decoding="async" data-nimg="1"
+                    style="color: transparent;" srcset="logo-2.png 1x, logo-1.png 2x" src="logo-1.png">
+                </div>
+              </div>
+              <div class="overflow-hidden leading-tight">
+                <p
+                  style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.82rem; letter-spacing: 2.5px; background: linear-gradient(135deg, rgb(56, 189, 248), rgb(96, 165, 250), rgb(129, 140, 248)) padding-box text; -webkit-text-fill-color: transparent; line-height: 1.15;">
+                  SMART SOLVE</p>
+                <p
+                  style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; letter-spacing: 3.5px; color: white; margin-top: 3px; text-transform: uppercase;">
+                  DeFi · BSC</p>
+              </div>
+            </div>
+          </a></div>
+        <p class="text-[10px] tracking-[3px] text-white uppercase mb-3 px-1"
+          style="font-family: &quot;Space Mono&quot;, monospace;">Navigation</p>
+        <nav class="flex flex-col gap-1 flex-1"><a class="
+        group relative flex items-center gap-3 rounded-xl transition-all duration-200 select-none
+        px-3 py-3
+        bg-gradient-to-r from-cyan-400/15 to-blue-500/10 text-white border border-cyan-400/30 shadow-[0_0_20px_rgba(6,182,212,0.1)]
+      " href=""><span
+              class="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-5 rounded-r-full bg-gradient-to-b from-cyan-400 to-blue-500"></span><span
+              class="shrink-0 transition-colors duration-200 text-cyan-400"><svg width="18" height="18"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+                <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+                <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+                <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+              </svg></span><span class="flex-1 text-sm font-semibold tracking-wide truncate"
+              style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 15px;">Dashboard</span><span
+              class="text-cyan-400/50"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg></span></a><a class="
+        group relative flex items-center gap-3 rounded-xl transition-all duration-200 select-none
+        px-3 py-3
+        text-slate-300 hover:text-white hover:bg-white/[0.05] border border-transparent
+      " href="wallet.html"><span
+              class="shrink-0 transition-colors duration-200 text-slate-500 group-hover:text-slate-200"><svg width="18"
+                height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="7"></circle>
+                <path d="M12 16V9"></path>
+                <path d="M9 12l3-3 3 3"></path>
+                <path d="M8 20h8"></path>
+              </svg></span><span class="flex-1 text-sm font-semibold tracking-wide truncate"
+              style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 15px;">Deposit</span></a><a class="
+        group relative flex items-center gap-3 rounded-xl transition-all duration-200 select-none
+        px-3 py-3
+        text-slate-300 hover:text-white hover:bg-white/[0.05] border border-transparent
+      " href="wallet.html"><span
+              class="shrink-0 transition-colors duration-200 text-slate-500 group-hover:text-slate-200"><svg width="18"
+                height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="7"></circle>
+                <path d="M12 16V9"></path>
+                <path d="M9 12l3-3 3 3"></path>
+                <path d="M8 20h8"></path>
+              </svg></span><span class="flex-1 text-sm font-semibold tracking-wide truncate"
+              style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 15px;">Stake SST</span></a><a class="
+        group relative flex items-center gap-3 rounded-xl transition-all duration-200 select-none
+        px-3 py-3
+        text-slate-300 hover:text-white hover:bg-white/[0.05] border border-transparent
+      " href="wallet.html"><span
+              class="shrink-0 transition-colors duration-200 text-slate-500 group-hover:text-slate-200"><svg width="18"
+                height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg></span><span class="flex-1 text-sm font-semibold tracking-wide truncate"
+              style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 15px;">Teams</span></a><a class="
+        group relative flex items-center gap-3 rounded-xl transition-all duration-200 select-none
+        px-3 py-3
+        text-slate-300 hover:text-white hover:bg-white/[0.05] border border-transparent
+      " href="wallet.html"><span
+              class="shrink-0 transition-colors duration-200 text-slate-500 group-hover:text-slate-200"><svg width="18"
+                height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg></span><span class="flex-1 text-sm font-semibold tracking-wide truncate"
+              style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 15px;">Ranks</span></a><a class="
+        group relative flex items-center gap-3 rounded-xl transition-all duration-200 select-none
+        px-3 py-3
+        text-slate-300 hover:text-white hover:bg-white/[0.05] border border-transparent
+      " href="wallet.html"><span
+              class="shrink-0 transition-colors duration-200 text-slate-500 group-hover:text-slate-200"><svg width="18"
+                height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                <path d="M3 3v5h5"></path>
+                <path d="M12 7v5l4 2"></path>
+              </svg></span><span class="flex-1 text-sm font-semibold tracking-wide truncate"
+              style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 15px;">Income History</span></a></nav>
+        <div
+          style="margin-bottom: 16px; padding: 12px 14px; border-radius: 12px; background: linear-gradient(135deg, rgb(11, 18, 32), rgb(17, 24, 39)); border: 1px solid rgba(56, 189, 248, 0.15); display: flex; justify-content: space-between; align-items: center;">
+          <span class="flex items-center gap-x-2" style="color: rgb(148, 163, 184); font-size: 15px;"><img alt="logo"
+              loading="lazy" width="25" height="25" decoding="async" data-nimg="1" style="color: transparent;"
+              srcset="logo-2.png 1x, logo-1.png 2x" src="logo-1.png"> SST</span><span
+            style="font-family: &quot;Orbitron&quot;, monospace; font-size: 18px; font-weight: 700; color: rgb(56, 189, 248); text-shadow: rgba(56, 189, 248, 0.35) 0px 0px 10px;">$NaN</span>
+        </div>
+        <div class="h-px bg-gradient-to-r from-transparent via-cyan-400/[0.12] to-transparent my-5"></div>
+        <div class="flex justify-center">
+          <div class="w-8 h-px bg-gradient-to-r from-cyan-400/30 to-blue-500/30"></div>
+        </div>
+      </div>
+    </aside>
+    <header
+      class="fixed top-0 right-0 z-30 flex items-center justify-between px-5 sm:px-7 h-16 transition-all duration-300"
+      style="left: 0px; background: rgba(4, 8, 16, 0.88); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(56, 189, 248, 0.07);">
+      <div class="flex items-center gap-4"><button
+          class="lg:hidden flex items-center justify-center w-9 h-9 rounded-xl border border-white/[0.08] bg-white/[0.04] text-slate-400 hover:text-white hover:border-cyan-400/30 transition-all"><svg
+            width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg></button>
+        <div class="lg:hidden flex items-center gap-2">
+          <div class="w-7 h-7 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
+            <img alt="SS" loading="lazy" width="20" height="20" decoding="async" data-nimg="1"
+              style="color: transparent;" srcset="logo-2.png 1x, logo.png 2x" src="logo.png">
+          </div><span
+            style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.7rem; letter-spacing: 2px; background: linear-gradient(135deg, rgb(56, 189, 248), rgb(129, 140, 248)) padding-box text; -webkit-text-fill-color: transparent;">SMART
+            SOLVE</span>
+        </div>
+        <div class="hidden lg:flex items-center gap-2"><span class="text-[10px] tracking-[3px] text-slate-500 uppercase"
+            style="font-family: &quot;Space Mono&quot;, monospace;">smartsolve.io</span></div>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="smartsolve-appkit-btn"><button
+            class=" group relative flex h-9 items-center gap-2 overflow-hidden rounded-2xl border border-white/10 bg-[#0f172a]/90 px-3.5 text-sm font-medium text-white transition-all duration-300 hover:border-cyan-400/30 hover:bg-[#111c31] hover:shadow-[0_0_30px_rgba(34,211,238,0.15)] active:scale-[0.98] backdrop-blur-xl ">
+            <div
+              class=" absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.15),transparent_65%)] ">
+            </div>
+            <a href="wallet.html">
+              <div
+                class="relative flex h-6 w-6 items-center justify-center rounded-full border border-cyan-400/20 bg-cyan-400/10 text-cyan-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-wallet h-3.5 w-3.5" aria-hidden="true">
+                  <path
+                    d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1">
+                  </path>
+                  <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
+                </svg>
+              </div>
+              <span class="relative">Connect Wallet</span>
+            </a>
+        </div>
+    </header>
+    <main class="flex flex-col min-h-screen transition-all duration-300 pt-16" style="margin-left: 0px;">
+      <div
+        class="pointer-events-none fixed top-0 right-0 w-[500px] h-[300px] bg-gradient-to-bl from-blue-500/[0.04] via-transparent to-transparent">
+      </div>
+      <div class="flex-1 p-4 sm:p-6 lg:p-8">
+        <div class="flex flex-col gap-y-12">
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div
+              style="position: relative; overflow: hidden; border-radius: 20px; padding: clamp(1.25rem, 4vw, 2rem); background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(37, 99, 235, 0.08) 50%, rgba(14, 165, 233, 0.05) 100%); border: 1px solid rgba(14, 165, 233, 0.18);">
+              <div
+                style="position: absolute; top: 0px; right: 0px; width: 260px; height: 200px; pointer-events: none; background: radial-gradient(at right top, rgba(56, 189, 248, 0.14), transparent 70%);">
+              </div>
+              <div
+                style="position: absolute; bottom: 0px; left: 0px; width: 200px; height: 160px; pointer-events: none; background: radial-gradient(at left bottom, rgba(37, 99, 235, 0.1), transparent 70%);">
+              </div>
+              <div
+                style="position: absolute; right: -32px; top: -32px; width: 160px; height: 160px; border-radius: 50%; border: 1px dashed rgba(56, 189, 248, 0.12); pointer-events: none;">
+              </div>
+              <div
+                style="position: absolute; right: -16px; top: -16px; width: 96px; height: 96px; border-radius: 50%; border: 1px dashed rgba(56, 189, 248, 0.1); pointer-events: none;">
+              </div>
+              <div style="position: relative; z-index: 1; display: flex; flex-direction: column; gap: 1.25rem;">
+                <div style="display: flex; align-items: center; gap: 8px;"><span
+                    style="width: 8px; height: 8px; border-radius: 50%; background: rgb(52, 211, 153); box-shadow: rgba(52, 211, 153, 0.25) 0px 0px 0px 3px; display: inline-block; animation: 2s ease-in-out infinite ssPulse;"></span><span
+                    style="font-family: &quot;Space Mono&quot;, monospace; font-size: 10px; letter-spacing: 3px; color: rgba(14, 165, 233, 0.7); text-transform: uppercase;">Smart
+                    Solve DeFi · Live</span></div>
+                <div>
+                  <h1
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1.6rem, 5vw, 2.6rem); background: linear-gradient(135deg, rgb(240, 249, 255) 20%, rgb(125, 211, 252) 60%, rgb(56, 189, 248) 100%) padding-box text; -webkit-text-fill-color: transparent; line-height: 1.15; margin: 0px;">
+                    Welcome Back</h1>
+                  <div
+                    style="font-family: &quot;Space Mono&quot;, monospace; font-size: 15px; padding: 4px 10px; border-radius: 6px; background: rgba(14, 165, 233, 0.1); border: 1px solid rgba(14, 165, 233, 0.2); color: rgba(56, 189, 248, 0.8); letter-spacing: 1px; margin: 14px 0px;"
+                    class="font-bold">ID #</div>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: flex-start;">
+                  <div style="flex: 1 1 220px; min-width: 0px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 6px;"><span
+                        style="font-family: &quot;Space Mono&quot;, monospace; font-size: 12px; color: rgb(56, 189, 248); letter-spacing: 1.5px;">INCOME
+                        LIMIT</span><span
+                        style="font-family: &quot;Space Mono&quot;, monospace; font-size: 12px; color: rgb(56, 189, 248); letter-spacing: 1px;">0%</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(14, 165, 233, 0.12); overflow: hidden;">
+                      <div
+                        style="height: 100%; border-radius: 3px; width: 0%; background: linear-gradient(to right, rgb(14, 165, 233), rgb(37, 99, 235)); box-shadow: rgba(14, 165, 233, 0.5) 0px 0px 10px; transition: width 0.8s;">
+                      </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-top: 6px;"><span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 15px; color: white;">$0.00
+                        earned</span><span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 15px; color: white;">$0.00
+                        max</span></div>
+                  </div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; flex: 0 0 auto;"><a
+                      href="wallet.html"><button
+                        style="display: flex; align-items: center; gap: 8px; padding: 10px 22px; border-radius: 12px; border: medium; background: linear-gradient(135deg, rgb(14, 165, 233), rgb(37, 99, 235)); box-shadow: rgba(14, 165, 233, 0.38) 0px 4px 22px; color: rgb(255, 255, 255); font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(14px, 2vw, 16px); letter-spacing: 0.5px; cursor: pointer; white-space: nowrap;"><svg
+                          width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2.2" stroke-linecap="round">
+                          <circle cx="12" cy="12" r="7"></circle>
+                          <path d="M12 16V9"></path>
+                          <path d="M9 12l3-3 3 3"></path>
+                        </svg>Deposit Now</button></a></div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: clamp(10px, 2vw, 16px);">
+              <div
+                style="position: relative; overflow: hidden; border-radius: 18px; padding: clamp(14px, 3vw, 22px); background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(255, 255, 255, 0.02)); border: 1px solid rgba(56, 189, 248, 0.145); transition: transform 0.25s;">
+                <div
+                  style="position: absolute; top: 0px; right: 0px; width: 80px; height: 80px; pointer-events: none; background: radial-gradient(circle at right top, rgba(56, 189, 248, 0.15), transparent 70%);">
+                </div>
+                <div
+                  style="width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: rgba(56, 189, 248, 0.094); border: 1px solid rgba(56, 189, 248, 0.19); color: rgb(56, 189, 248); margin-bottom: 14px;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+                    <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path>
+                  </svg>
+                </div>
+                <div
+                  style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1.25rem, 3.5vw, 1.75rem); color: rgb(240, 249, 255); line-height: 1.1; margin-bottom: 4px; letter-spacing: -0.5px;">
+                  $0.00</div>
+                <div
+                  style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: clamp(17px, 2vw, 19px); font-weight: 600; color: rgba(186, 210, 235, 0.75); margin-bottom: 2px;">
+                  Total Portfolio</div>
+              </div>
+              <div
+                style="position: relative; overflow: hidden; border-radius: 18px; padding: clamp(14px, 3vw, 22px); background: linear-gradient(135deg, rgba(52, 211, 153, 0.15), rgba(255, 255, 255, 0.02)); border: 1px solid rgba(52, 211, 153, 0.145); transition: transform 0.25s;">
+                <div
+                  style="position: absolute; top: 0px; right: 0px; width: 80px; height: 80px; pointer-events: none; background: radial-gradient(circle at right top, rgba(52, 211, 153, 0.15), transparent 70%);">
+                </div>
+                <div
+                  style="width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: rgba(52, 211, 153, 0.094); border: 1px solid rgba(52, 211, 153, 0.19); color: rgb(52, 211, 153); margin-bottom: 14px;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                </div>
+                <div
+                  style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1.25rem, 3.5vw, 1.75rem); color: rgb(240, 249, 255); line-height: 1.1; margin-bottom: 4px; letter-spacing: -0.5px;">
+                  $0.00</div>
+                <div
+                  style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: clamp(17px, 2vw, 19px); font-weight: 600; color: rgba(186, 210, 235, 0.75); margin-bottom: 2px;">
+                  Claimable Income</div>
+              </div>
+              <div
+                style="position: relative; overflow: hidden; border-radius: 18px; padding: clamp(14px, 3vw, 22px); background: linear-gradient(135deg, rgba(167, 139, 250, 0.15), rgba(255, 255, 255, 0.02)); border: 1px solid rgba(167, 139, 250, 0.145); transition: transform 0.25s;">
+                <div
+                  style="position: absolute; top: 0px; right: 0px; width: 80px; height: 80px; pointer-events: none; background: radial-gradient(circle at right top, rgba(167, 139, 250, 0.15), transparent 70%);">
+                </div>
+                <div
+                  style="width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: rgba(167, 139, 250, 0.094); border: 1px solid rgba(167, 139, 250, 0.19); color: rgb(167, 139, 250); margin-bottom: 14px;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </div>
+                <div
+                  style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1.25rem, 3.5vw, 1.75rem); color: rgb(240, 249, 255); line-height: 1.1; margin-bottom: 4px; letter-spacing: -0.5px;">
+                  $0</div>
+                <div
+                  style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: clamp(17px, 2vw, 19px); font-weight: 600; color: rgba(186, 210, 235, 0.75); margin-bottom: 2px;">
+                  Total Earned</div>
+              </div>
+              <div
+                style="position: relative; overflow: hidden; border-radius: 18px; padding: clamp(14px, 3vw, 22px); background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(255, 255, 255, 0.02)); border: 1px solid rgba(251, 191, 36, 0.145); transition: transform 0.25s;">
+                <div
+                  style="position: absolute; top: 0px; right: 0px; width: 80px; height: 80px; pointer-events: none; background: radial-gradient(circle at right top, rgba(251, 191, 36, 0.15), transparent 70%);">
+                </div>
+                <div
+                  style="width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: rgba(251, 191, 36, 0.094); border: 1px solid rgba(251, 191, 36, 0.19); color: rgb(251, 191, 36); margin-bottom: 14px;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div
+                  style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1.25rem, 3.5vw, 1.75rem); color: rgb(240, 249, 255); line-height: 1.1; margin-bottom: 4px; letter-spacing: -0.5px;">
+                  —</div>
+                <div
+                  style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: clamp(17px, 2vw, 19px); font-weight: 600; color: rgba(186, 210, 235, 0.75); margin-bottom: 2px;">
+                  Current Rank</div>
+              </div>
+            </div>
+            <style>
+              @keyframes ssPulse {
+
+                0%,
+                100% {
+                  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.25);
+                }
+
+                50% {
+                  box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.08);
+                }
+              }
+            </style>
+          </div>
+          <style>
+            @import url("css2.css");
+
+            @keyframes ssWalletSpin {
+              to {
+                transform: rotate(360deg);
+              }
+            }
+
+            @keyframes ssPulse2 {
+
+              0%,
+              100% {
+                box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.2);
+              }
+
+              50% {
+                box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.06);
+              }
+            }
+
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+
+            input[type=number] {
+              -moz-appearance: textfield;
+            }
+          </style>
+          <div
+            style="display: flex; flex-direction: column; gap: 1.5rem; font-family: &quot;Rajdhani&quot;, sans-serif;">
+            <div
+              style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem;">
+              <div>
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                  <div
+                    style="width: 34px; height: 34px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.25);">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"
+                      stroke-linecap="round">
+                      <path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Z"></path>
+                      <path d="M16 3H8L6 7h12l-2-4Z"></path>
+                      <circle cx="17" cy="13" r="1.5" fill="#38bdf8" stroke="none"></circle>
+                    </svg>
+                  </div><span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1.2rem, 3.5vw, 1.7rem); background: linear-gradient(135deg, rgb(240, 249, 255), rgb(56, 189, 248)) padding-box text; -webkit-text-fill-color: transparent;">WITHDRAW</span>
+                </div>
+              </div>
+              <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;"><button
+                  style="display: flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 12px; background: rgba(14, 165, 233, 0.08); border: 1px solid rgba(14, 165, 233, 0.2); color: rgb(56, 189, 248); font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: 14px; cursor: pointer; transition: 0.2s; letter-spacing: 0.3px;"><svg
+                    width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round">
+                    <path d="M3 12a9 9 0 1 0 9-9A9.75 9.75 0 0 0 3.27 5.27L3 8"></path>
+                    <path d="M3 3v5h5"></path>
+                    <path d="M12 7v5l4 2"></path>
+                  </svg>History</button></div>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem;">
+              <div
+                style="border-radius: 22px; padding: clamp(1.25rem, 4vw, 1.85rem); background: linear-gradient(135deg, rgba(56, 189, 248, 0.035), rgba(56, 189, 248, 0.016)); border: 1px solid rgba(56, 189, 248, 0.133); position: relative; overflow: hidden;">
+                <div
+                  style="position: absolute; top: 0px; right: 0px; width: 200px; height: 180px; pointer-events: none; background: radial-gradient(at right top, rgba(56, 189, 248, 0.07), transparent 70%);">
+                </div>
+                <div style="position: relative; z-index: 1;">
+                  <div
+                    style="display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 20px; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                      <div
+                        style="width: 38px; height: 38px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: rgba(56, 189, 248, 0.12); border: 1px solid rgba(56, 189, 248, 0.28); flex-shrink: 0;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"
+                          stroke-linecap="round">
+                          <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <div
+                          style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(14px, 3vw, 18px); color: rgb(240, 249, 255); letter-spacing: 1px;">
+                          DAILY Reward</div>
+                        <div
+                          style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 13px; color: white; font-weight: 500;">
+                          1% per day · claim, then withdraw as SST</div>
+                      </div>
+                    </div>
+                    <div
+                      style="display: flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 10px; background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.2);">
+                      <span
+                        style="width: 7px; height: 7px; border-radius: 50%; background: rgb(251, 191, 36); display: inline-block; box-shadow: rgba(251, 191, 36, 0.2) 0px 0px 0px 3px; animation: 2s ease-in-out infinite ssPulse2;"></span><span
+                        style="font-family: &quot;Space Mono&quot;, monospace; font-size: 9px; color: rgba(251, 191, 36, 0.7); letter-spacing: 1px;">LOCKED</span>
+                    </div>
+                  </div>
+                  <div
+                    style="margin-bottom: 20px; border-radius: 14px; padding: 14px 16px; background: rgba(251, 191, 36, 0.06); border: 1px solid rgba(251, 191, 36, 0.18);">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                      <span
+                        style="font-family: &quot;Space Mono&quot;, monospace; font-size: 9px; letter-spacing: 1.5px; color: rgba(251, 191, 36, 0.6); text-transform: uppercase;">Platform
+                        Checkpoint</span><span
+                        style="font-family: &quot;Space Mono&quot;, monospace; font-size: 10px; color: rgb(251, 191, 36); font-weight: 700;">0.0%</span>
+                    </div>
+                    <div
+                      style="height: 8px; border-radius: 4px; background: rgba(255, 255, 255, 0.06); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 0%; border-radius: 4px; background: linear-gradient(to right, rgb(245, 158, 11), rgb(251, 191, 36)); box-shadow: rgba(251, 191, 36, 0.4) 0px 0px 8px; transition: width 0.8s;">
+                      </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-top: 6px;"><span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 12px; color: rgba(186, 210, 235, 0.55);">$0.00
+                        deposited platform-wide</span><span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 12px; color: rgba(186, 210, 235, 0.4);">$100,000.00
+                        needed</span></div>
+                    <div
+                      style="margin-top: 10px; font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 13px; color: rgba(186, 210, 235, 0.6); font-weight: 500; line-height: 1.5;">
+                      Withdrawals unlock platform-wide once total deposits cross this checkpoint — permanently, for
+                      everyone. You can still claim into your balance below.</div>
+                  </div>
+                  <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 20px;">
+                    <div>
+                      <div
+                        style="font-family: &quot;Space Mono&quot;, monospace; font-size: 12px; letter-spacing: 2.5px; color: rgb(56, 189, 248); text-transform: uppercase; margin-bottom: 6px;">
+                        Pending To Claim</div>
+                      <div
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1.6rem, 5vw, 2.4rem); color: rgb(240, 249, 255); line-height: 1.1; letter-spacing: -0.5px;">
+                        $0.0000 <span class="text-sm text-lime-400">~ 0.0000 SST</span></div>
+                    </div>
+                    <div
+                      style="border-radius: 14px; padding: 12px 14px; background: rgba(52, 211, 153, 0.06); border: 1px solid rgba(52, 211, 153, 0.16);">
+                      <div
+                        style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(52, 211, 153, 0.55); letter-spacing: 1.5px; margin-bottom: 4px; text-transform: uppercase;">
+                        Withdrawable Balance</div>
+                      <div
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1.3rem, 4vw, 1.7rem); color: rgb(52, 211, 153);">
+                        $0.00</div>
+                    </div>
+                  </div>
+                  <div style="margin-bottom: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+                    <div
+                      style="flex: 1 1 0%; min-width: 140px; border-radius: 12px; padding: 10px 14px; background: rgba(56, 189, 248, 0.06); border: 1px solid rgba(56, 189, 248, 0.12);">
+                      <div
+                        style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(56, 189, 248, 0.45); letter-spacing: 1.5px; margin-bottom: 4px;">
+                        PRINCIPAL</div>
+                      <div
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 1.05rem; color: rgb(240, 249, 255);">
+                        $0.00</div>
+                    </div>
+                  </div>
+                  <div style="margin-bottom: 20px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                      <span
+                        style="font-family: &quot;Space Mono&quot;, monospace; font-size: 12px; letter-spacing: 2px; color: rgb(56, 189, 248); text-transform: uppercase;">Time
+                        Since Last Claim</span>
+                    </div>
+                    <A href="wallet.html">
+                      <div style="display: flex; gap: 6px; margin-bottom: 8px;">
+                        <div style="display: flex; flex-direction: column; align-items: center; flex: 1 1 0%;">
+                          <div
+                            style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.35rem); color: rgb(56, 189, 248); background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.18); border-radius: 8px; padding: 6px 0px; width: 100%; text-align: center; line-height: 1;">
+                            KYC</div><span
+                            style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(56, 189, 248, 0.4); margin-top: 3px;">D</span>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: center; flex: 1 1 0%;">
+                          <div
+                            style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.35rem); color: rgb(56, 189, 248); background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.18); border-radius: 8px; padding: 6px 0px; width: 100%; text-align: center; line-height: 1;">
+                            WhiteList</div><span
+                            style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(56, 189, 248, 0.4); margin-top: 3px;">H</span>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: center; flex: 1 1 0%;">
+                          <div
+                            style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.35rem); color: rgb(56, 189, 248); background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.18); border-radius: 8px; padding: 6px 0px; width: 100%; text-align: center; line-height: 1;">
+                            Claim Airdrop</div><span
+                            style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(56, 189, 248, 0.4); margin-top: 3px;">M</span>
+                        </div>
+                      </div>
+                  </div>
+                  <div style="margin-bottom: 18px;"><a href="wallet.html"><button disabled=""
+                        style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 24px; border-radius: 14px; border: medium; background: rgba(255, 255, 255, 0.05); box-shadow: none; color: rgba(148, 163, 184, 0.4); font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(14px, 2.2vw, 16px); letter-spacing: 0.3px; cursor: not-allowed; transition: 0.2s; opacity: 1; white-space: nowrap;"><svg
+                          width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2.2" stroke-linecap="round">
+                          <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>Claim </button></div>
+                </div>
+              </div>
+              <div
+                style="border-radius: 22px; padding: clamp(1.25rem, 4vw, 1.85rem); background: linear-gradient(135deg, rgba(167, 139, 250, 0.035), rgba(167, 139, 250, 0.016)); border: 1px solid rgba(167, 139, 250, 0.133); position: relative; overflow: hidden;">
+                <div
+                  style="position: absolute; top: 0px; right: 0px; width: 200px; height: 180px; pointer-events: none; background: radial-gradient(at right top, rgba(167, 139, 250, 0.07), transparent 70%);">
+                </div>
+                <div style="position: relative; z-index: 1;">
+                  <div
+                    style="display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 24px; flex-wrap: wrap;">
+                    <div>
+                      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                        <div
+                          style="width: 38px; height: 38px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: rgba(167, 139, 250, 0.12); border: 1px solid rgba(167, 139, 250, 0.28); flex-shrink: 0;">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"
+                            stroke-linecap="round">
+                            <path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Z"></path>
+                            <path d="M16 3H8L6 7h12l-2-4Z"></path>
+                            <circle cx="17" cy="13" r="1.5" fill="#a78bfa" stroke="none"></circle>
+                          </svg>
+                        </div>
+                        <div>
+                          <div
+                            style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(14px, 3vw, 18px); color: rgb(240, 249, 255); letter-spacing: 1px;">
+                            WORKING REWARD</div>
+                          <div
+                            style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 13px; color: white; font-weight: 500;">
+                            Level · Direct · Infinity · Monthly bonuses</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      style="display: flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 10px; background: rgba(167, 139, 250, 0.1); border: 1px solid rgba(167, 139, 250, 0.2);">
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"
+                        stroke-linecap="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      </svg><span
+                        style="font-family: &quot;Space Mono&quot;, monospace; font-size: 9px; color: rgba(167, 139, 250, 0.7); letter-spacing: 1px;">USDT</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      style="font-family: &quot;Space Mono&quot;, monospace; font-size: 12px; letter-spacing: 2.5px; color: rgb(167, 139, 250); text-transform: uppercase; margin-bottom: 6px;">
+                      Claimable Balance</div>
+                    <div
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1.6rem, 5vw, 2.4rem); color: rgb(240, 249, 255); line-height: 1.1; letter-spacing: -0.5px;">
+                      $0.00 </div>
+                  </div>
+                  <div style="margin-top: 24px;">
+                    <div
+                      style="font-family: &quot;Space Mono&quot;, monospace; font-size: 9px; letter-spacing: 2px; color: rgb(167, 139, 250); margin-bottom: 8px;">
+                      AMOUNT TO WITHDRAW (min $1)</div>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                      <div style="flex: 1 1 180px; position: relative;">
+                        <div
+                          style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 15px; color: rgba(167, 139, 250, 0.5); pointer-events: none;">
+                          $</div><input min="1" max="0" step="1" placeholder="0.00"
+                          style="width: 100%; height: 52px; padding-left: 30px; padding-right: 90px; border-radius: 14px; border: 1.5px solid rgba(167, 139, 250, 0.25); background: rgba(5, 15, 35, 0.7); color: rgb(240, 249, 255); font-family: &quot;Orbitron&quot;, monospace; font-weight: 700; font-size: 1rem; outline: none; box-sizing: border-box; transition: border-color 0.2s;"
+                          type="number" value=""><button
+                          style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); padding: 4px 10px; border-radius: 8px; background: rgba(167, 139, 250, 0.14); border: 1px solid rgba(167, 139, 250, 0.25); color: rgb(167, 139, 250); font-family: &quot;Space Mono&quot;, monospace; font-size: 9px; letter-spacing: 1px; cursor: pointer; font-weight: 700;">MAX</button>
+                      </div><button disabled=""
+                        style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 24px; border-radius: 14px; border: medium; background: rgba(255, 255, 255, 0.05); box-shadow: none; color: rgba(148, 163, 184, 0.4); font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(14px, 2.2vw, 16px); letter-spacing: 0.3px; cursor: not-allowed; transition: 0.2s; opacity: 1; white-space: nowrap;"><svg
+                          width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          stroke-width="2.2" stroke-linecap="round">
+                          <path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Z"></path>
+                          <path d="M12 12v6M9 15l3 3 3-3"></path>
+                        </svg>Claim</button>
+                    </div>
+                  </div>
+                  <div
+                    style="margin-top: 20px; display: flex; gap: 8px; flex-wrap: wrap; padding: 10px 14px; border-radius: 12px; background: rgba(5, 15, 35, 0.5); border: 1px solid rgba(167, 139, 250, 0.1);">
+                    <div style="display: flex; align-items: flex-start; gap: 8px;">
+                      <div
+                        style="width: 18px; height: 18px; border-radius: 5px; display: flex; align-items: center; justify-content: center; background: rgba(167, 139, 250, 0.1); border: 1px solid rgba(167, 139, 250, 0.2); flex-shrink: 0; margin-top: 1px;">
+                        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2.5">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </div>
+                      <div>
+                        <div
+                          style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 16px; font-weight: 700; color: rgb(203, 213, 225);">
+                          10% Withdrawal Bonus</div>
+                        <div
+                          style="font-family: &quot;Space Mono&quot;, monospace; font-size: 10px; color: white; margin-top: 1px;">
+                          Distributed to your uplines</div>
+                      </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 8px;">
+                      <div
+                        style="width: 18px; height: 18px; border-radius: 5px; display: flex; align-items: center; justify-content: center; background: rgba(167, 139, 250, 0.1); border: 1px solid rgba(167, 139, 250, 0.2); flex-shrink: 0; margin-top: 1px;">
+                        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2.5">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </div>
+                      <div>
+                        <div
+                          style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 16px; font-weight: 700; color: rgb(203, 213, 225);">
+                          Instant Transfer</div>
+                        <div
+                          style="font-family: &quot;Space Mono&quot;, monospace; font-size: 10px; color: white; margin-top: 1px;">
+                          USDT sent to your wallet</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="border-radius: 18px; overflow: hidden; background: linear-gradient(135deg, rgba(244, 114, 182, 0.05), rgba(192, 132, 252, 0.03)); border: 1px solid rgba(244, 114, 182, 0.14); width: 100%; position: relative;">
+            <div
+              style="position: absolute; top: 0px; right: 0px; width: 160px; height: 140px; pointer-events: none; background: radial-gradient(at right top, rgba(244, 114, 182, 0.1), transparent 70%);">
+            </div>
+            <div style="position: relative; padding: 18px 20px;">
+              <div
+                style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; gap: 10px; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <div
+                    style="width: 36px; height: 36px; border-radius: 11px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(244, 114, 182, 0.1); border: 1px solid rgba(244, 114, 182, 0.22); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 16px; color: rgb(244, 114, 182);">∞</span>
+                  </div>
+                  <div>
+                    <div
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 800; font-size: 13px; color: rgb(253, 242, 248); letter-spacing: 1px;">
+                      INFINITY BONUS</div>
+                    <div
+                      style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 12px; color: rgba(235, 186, 220, 0.55); font-weight: 500;">
+                      Unlocks at Rank V8</div>
+                  </div>
+                </div>
+                <div
+                  style="display: flex; align-items: center; gap: 6px; padding: 4px 11px; border-radius: 9px; background: rgba(148, 163, 184, 0.08); border: 1px solid rgba(148, 163, 184, 0.18);">
+                  <span
+                    style="width: 6px; height: 6px; border-radius: 50%; background: rgba(148, 163, 184, 0.5); box-shadow: none; display: inline-block; animation: none;"></span><span
+                    style="font-family: &quot;Space Mono&quot;, monospace; font-size: 9px; letter-spacing: 1px; color: rgba(148, 163, 184, 0.6);">LOCKED</span>
+                </div>
+              </div>
+              <div style="margin-bottom: 14px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 7px;"><span
+                    style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 13px; font-weight: 600; color: rgba(235, 186, 220, 0.7);">Rank
+                    Progress</span><span
+                    style="font-family: &quot;Space Mono&quot;, monospace; font-size: 11px; color: rgb(244, 114, 182); font-weight: 700;">—
+                    / V8</span></div>
+                <div
+                  style="height: 9px; border-radius: 5px; background: rgba(255, 255, 255, 0.05); overflow: hidden; position: relative;">
+                  <div
+                    style="height: 100%; border-radius: 5px; width: 0%; background: linear-gradient(to right, rgb(236, 72, 153), rgb(192, 38, 211)); box-shadow: rgba(236, 72, 153, 0.4) 0px 0px 10px; transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);">
+                  </div>
+                  <div
+                    style="position: absolute; top: 0px; bottom: 0px; left: 12.5%; width: 1px; background: rgba(0, 0, 0, 0.25);">
+                  </div>
+                  <div
+                    style="position: absolute; top: 0px; bottom: 0px; left: 25%; width: 1px; background: rgba(0, 0, 0, 0.25);">
+                  </div>
+                  <div
+                    style="position: absolute; top: 0px; bottom: 0px; left: 37.5%; width: 1px; background: rgba(0, 0, 0, 0.25);">
+                  </div>
+                  <div
+                    style="position: absolute; top: 0px; bottom: 0px; left: 50%; width: 1px; background: rgba(0, 0, 0, 0.25);">
+                  </div>
+                  <div
+                    style="position: absolute; top: 0px; bottom: 0px; left: 62.5%; width: 1px; background: rgba(0, 0, 0, 0.25);">
+                  </div>
+                  <div
+                    style="position: absolute; top: 0px; bottom: 0px; left: 75%; width: 1px; background: rgba(0, 0, 0, 0.25);">
+                  </div>
+                  <div
+                    style="position: absolute; top: 0px; bottom: 0px; left: 87.5%; width: 1px; background: rgba(0, 0, 0, 0.25);">
+                  </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-top: 6px;"><span
+                    style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 12px; color: rgba(235, 186, 220, 0.45);">8
+                    ranks to go</span><span
+                    style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 12px; color: rgba(235, 186, 220, 0.4);">0%</span>
+                </div>
+              </div>
+              <div
+                style="border-radius: 12px; padding: 10px 14px; background: rgba(244, 114, 182, 0.05); border: 1px solid rgba(244, 114, 182, 0.12); font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 12.5px; color: rgba(235, 186, 220, 0.55); font-weight: 500; line-height: 1.5;">
+                Reach <strong style="color: rgb(244, 114, 182);">Rank V8</strong> to unlock earnings across unlimited
+                layers.</div>
+            </div>
+            <style>
+              @keyframes infPulse {
+
+                0%,
+                100% {
+                  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.2);
+                }
+
+                50% {
+                  box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.06);
+                }
+              }
+            </style>
+          </div>
+          <div
+            style="border-radius: 18px; overflow: hidden; width: 100%; background: linear-gradient(135deg, rgba(167, 139, 250, 0.06), rgba(52, 211, 153, 0.03)); border: 1px solid rgba(167, 139, 250, 0.14);">
+            <div
+              style="padding: 14px 18px; border-bottom: 1px solid rgba(167, 139, 250, 0.1); display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <div
+                  style="width: 34px; height: 34px; border-radius: 10px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(167, 139, 250, 0.12); border: 1px solid rgba(167, 139, 250, 0.25);">
+                  <img alt="SST" loading="lazy" width="28" height="28" decoding="async" data-nimg="1"
+                    style="color: transparent;" srcset="logo-2.png 1x, logo-1.png 2x" src="logo-1.png">
+                </div>
+                <div>
+                  <div
+                    style="font-family: &quot;Space Mono&quot;, monospace; font-size: 11px; letter-spacing: 1.5px; color: rgba(167, 139, 250, 0.55); text-transform: uppercase; margin-bottom: 2px;">
+                    Sell SST</div>
+                  <div
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: clamp(1.1rem, 3vw, 1.35rem); font-weight: 900; color: rgb(240, 249, 255);">
+                    $0 <span
+                      style="font-size: 0.65em; color: rgba(167, 139, 250, 0.5); font-family: &quot;Space Mono&quot;, monospace;">USDT</span>
+                  </div>
+                </div>
+              </div>
+              <div style="display: flex; gap: 8px;"><button title="Slippage settings"
+                  style="width: 30px; height: 30px; border-radius: 9px; display: flex; align-items: center; justify-content: center; background: rgba(167, 139, 250, 0.07); border: 1px solid rgba(167, 139, 250, 0.2); color: rgb(167, 139, 250); cursor: pointer;"><svg
+                    width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round">
+                    <path
+                      d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
+                    </path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg></button><button title="Refresh"
+                  style="width: 30px; height: 30px; border-radius: 9px; display: flex; align-items: center; justify-content: center; background: rgba(167, 139, 250, 0.07); border: 1px solid rgba(167, 139, 250, 0.2); color: rgb(167, 139, 250); cursor: pointer;"><svg
+                    style="" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2" stroke-linecap="round">
+                    <path d="M23 4v6h-6"></path>
+                    <path d="M1 20v-6h6"></path>
+                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"></path>
+                    <path d="M20.49 15a9 9 0 0 1-14.85 3.36L1 14"></path>
+                  </svg></button></div>
+            </div>
+            <div style="padding: 10px 18px 0px; display: flex; gap: 10px; flex-wrap: wrap;">
+              <div
+                style="flex: 1 1 120px; border-radius: 10px; padding: 7px 12px; background: rgba(167, 139, 250, 0.03); border: 1px solid rgba(167, 139, 250, 0.082);">
+                <div
+                  style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(167, 139, 250, 0.333); letter-spacing: 1px; margin-bottom: 3px;">
+                  SST Balance</div>
+                <div
+                  style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.95rem; color: rgb(167, 139, 250);">
+                  0</div>
+              </div>
+              <div
+                style="flex: 1 1 120px; border-radius: 10px; padding: 7px 12px; background: rgba(52, 211, 153, 0.03); border: 1px solid rgba(52, 211, 153, 0.082);">
+                <div
+                  style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(52, 211, 153, 0.333); letter-spacing: 1px; margin-bottom: 3px;">
+                  USDT Balance</div>
+                <div
+                  style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.95rem; color: rgb(52, 211, 153);">
+                  0</div>
+              </div>
+            </div>
+            <div style="padding: 14px 18px 18px;">
+              <div style="margin-bottom: 6px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 7px;">
+                  <span
+                    style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 14px; font-weight: 700; color: rgb(240, 249, 255);">Sell
+                    SST</span>
+                  <div style="display: flex; align-items: center; gap: 6px;"><span
+                      style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 12px; color: rgba(186, 210, 235, 0.45);">Balance:
+                      0</span><button
+                      style="padding: 2px 9px; border-radius: 6px; background: rgba(167, 139, 250, 0.082); border: 1px solid rgba(167, 139, 250, 0.157); color: rgb(167, 139, 250); font-family: &quot;Space Mono&quot;, monospace; font-size: 9px; font-weight: 700; cursor: pointer; letter-spacing: 0.5px;">MAX</button><span
+                      style="font-family: &quot;Space Mono&quot;, monospace; font-size: 10px; font-weight: 700; color: rgb(167, 139, 250); padding: 1px 8px; border-radius: 6px; background: rgba(167, 139, 250, 0.082); border: 1px solid rgba(167, 139, 250, 0.19);">SST</span>
+                  </div>
+                </div>
+                <div style="position: relative;"><input min="0" placeholder="0"
+                    style="width: 100%; box-sizing: border-box; padding: 12px 14px; border-radius: 12px; background: rgba(5, 15, 35, 0.5); border: 1.5px solid rgba(167, 139, 250, 0.19); color: rgb(240, 249, 255); font-family: &quot;Orbitron&quot;, monospace; font-size: clamp(1.1rem, 3vw, 1.3rem); font-weight: 900; outline: none;"
+                    type="number" value="100"></div>
+              </div>
+              <div style="display: flex; justify-content: center; margin: 4px 0px; align-items: center; gap: 10px;">
+                <div style="flex: 1 1 0%; height: 1px; background: rgba(167, 139, 250, 0.1);"></div>
+                <div
+                  style="width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(167, 139, 250, 0.08); border: 1px solid rgba(167, 139, 250, 0.2); color: rgb(167, 139, 250);">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                  </svg>
+                </div>
+                <div style="flex: 1 1 0%; height: 1px; background: rgba(52, 211, 153, 0.1);"></div>
+              </div>
+              <div style="margin-bottom: 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 7px;">
+                  <span
+                    style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 14px; font-weight: 700; color: rgb(240, 249, 255);">Receive
+                    USDT</span><span
+                    style="font-family: &quot;Space Mono&quot;, monospace; font-size: 10px; font-weight: 700; color: rgb(52, 211, 153); padding: 1px 8px; border-radius: 6px; background: rgba(52, 211, 153, 0.082); border: 1px solid rgba(52, 211, 153, 0.19);">USDT</span>
+                </div>
+                <div
+                  style="padding: 12px 14px; border-radius: 12px; background: rgba(52, 211, 153, 0.047); border: 1.5px solid rgba(52, 211, 153, 0.145); display: flex; align-items: center; justify-content: space-between; min-height: 52px;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: clamp(1.1rem, 3vw, 1.3rem); font-weight: 900; color: rgb(52, 211, 153);">0</span>
+                </div>
+              </div><button disabled=""
+                style="width: 100%; height: 52px; border-radius: 14px; border: medium; background: rgba(255, 255, 255, 0.05); box-shadow: none; color: rgba(148, 163, 184, 0.35); font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 900; font-size: clamp(15px, 2.2vw, 17px); letter-spacing: 0.5px; cursor: not-allowed; display: flex; align-items: center; justify-content: center; gap: 8px; opacity: 1; transition: 0.2s;">Sell
+                SST → USDT</button>
+              <div style="margin-top: 12px; text-align: center;"><span
+                  style="font-family: &quot;Space Mono&quot;, monospace; font-size: 11px; color: rgba(186, 210, 235, 0.4);">1
+                  SST ≈ $0 USDT · Pair: 0x850D…9355</span></div>
+            </div>
+            <style>
+              @keyframes sstSpin {
+                to {
+                  transform: rotate(360deg);
+                }
+              }
+
+              input[type=number]::-webkit-inner-spin-button,
+              input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+              }
+
+              input[type=number] {
+                -moz-appearance: textfield;
+              }
+            </style>
+          </div>
+          <div
+            style="border-radius: 18px; overflow: hidden; background: linear-gradient(135deg, rgba(167, 139, 250, 0.05), rgba(37, 99, 235, 0.03)); border: 1px solid rgba(167, 139, 250, 0.12);">
+            <div
+              style="display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; border-bottom: 1px solid rgba(167, 139, 250, 0.08); flex-wrap: wrap; gap: 8px;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <div
+                  style="width: 34px; height: 34px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: rgba(167, 139, 250, 0.1); border: 1px solid rgba(167, 139, 250, 0.2);">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"
+                    stroke-linecap="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div><span
+                  style="font-family: &quot;Orbitron&quot;, monospace; font-size: 13px; font-weight: 700; color: rgb(240, 249, 255); letter-spacing: 1px;">TEAM
+                  OVERVIEW</span>
+              </div><a href="https://www.smartsolvedefi.xyz/teams"><button
+                  style="display: flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 10px; background: rgba(167, 139, 250, 0.1); border: 1px solid rgba(167, 139, 250, 0.22); color: rgb(167, 139, 250); font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 13px; font-weight: 600; cursor: pointer;">View
+                  Team<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg></button></a>
+            </div>
+            <div
+              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; padding: 16px 20px; border-bottom: 1px solid rgba(167, 139, 250, 0.07);">
+              <div
+                style="border-radius: 14px; padding: 14px 14px 12px; background: rgba(56, 189, 248, 0.047); border: 1px solid rgba(56, 189, 248, 0.1);">
+                <div style="color: rgb(56, 189, 248); margin-bottom: 8px;"><svg width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                  </svg></div>
+                <div
+                  style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.35rem); color: rgb(240, 249, 255); line-height: 1.1; margin-bottom: 3px;">
+                  0</div>
+                <div
+                  style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 15px; font-weight: 600; color: rgba(186, 210, 235, 0.7);">
+                  Direct Team</div>
+              </div>
+              <div
+                style="border-radius: 14px; padding: 14px 14px 12px; background: rgba(167, 139, 250, 0.047); border: 1px solid rgba(167, 139, 250, 0.1);">
+                <div style="color: rgb(167, 139, 250); margin-bottom: 8px;"><svg width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg></div>
+                <div
+                  style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.35rem); color: rgb(240, 249, 255); line-height: 1.1; margin-bottom: 3px;">
+                  0</div>
+                <div
+                  style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 15px; font-weight: 600; color: rgba(186, 210, 235, 0.7);">
+                  Total Team</div>
+              </div>
+              <div
+                style="border-radius: 14px; padding: 14px 14px 12px; background: rgba(52, 211, 153, 0.047); border: 1px solid rgba(52, 211, 153, 0.1);">
+                <div style="color: rgb(52, 211, 153); margin-bottom: 8px;"><svg width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg></div>
+                <div
+                  style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.35rem); color: rgb(240, 249, 255); line-height: 1.1; margin-bottom: 3px;">
+                  0</div>
+                <div
+                  style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 15px; font-weight: 600; color: rgba(186, 210, 235, 0.7);">
+                  Total Business</div>
+              </div>
+              <div
+                style="border-radius: 14px; padding: 14px 14px 12px; background: rgba(251, 191, 36, 0.047); border: 1px solid rgba(251, 191, 36, 0.1);">
+                <div style="color: rgb(251, 191, 36); margin-bottom: 8px;"><svg width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                    <path d="M16 2v4M8 2v4M3 10h18"></path>
+                  </svg></div>
+                <div
+                  style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.35rem); color: rgb(240, 249, 255); line-height: 1.1; margin-bottom: 3px;">
+                  0</div>
+                <div
+                  style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 15px; font-weight: 600; color: rgba(186, 210, 235, 0.7);">
+                  Monthly Matching</div>
+              </div>
+            </div>
+            <div style="padding: 16px 20px 20px;">
+              <div
+                style="display: flex; border-radius: 10px; overflow: hidden; height: 24px; background: rgba(255, 255, 255, 0.04);">
+                <div
+                  style="width: 50%; background: linear-gradient(to right, rgb(14, 165, 233), rgb(37, 99, 235)); display: flex; align-items: center; justify-content: center; font-family: &quot;Space Mono&quot;, monospace; font-size: 9px; color: white; transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);">
+                  50%</div>
+                <div
+                  style="width: 50%; background: linear-gradient(to right, rgba(167, 139, 250, 0.5), rgba(167, 139, 250, 0.3)); display: flex; align-items: center; justify-content: center; font-family: &quot;Space Mono&quot;, monospace; font-size: 9px; color: rgba(167, 139, 250, 0.9); transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);">
+                  50%</div>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <div
+                    style="width: 10px; height: 10px; border-radius: 2px; background: linear-gradient(135deg, rgb(14, 165, 233), rgb(37, 99, 235));">
+                  </div><span
+                    style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 15px; color: white;">Strong:
+                    $0.00</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <div style="width: 10px; height: 10px; border-radius: 2px; background: rgba(167, 139, 250, 0.5);">
+                  </div><span
+                    style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 15px; color: white;">Others:
+                    $0.00</span>
+                </div>
+              </div>
+              <div
+                style="margin-top: 14px; border-radius: 12px; padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; background: rgba(52, 211, 153, 0.07); border: 1px solid rgba(52, 211, 153, 0.15);">
+                <span
+                  style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 14px; font-weight: 700; color: rgba(186, 210, 235, 0.8);">Matching
+                  Business</span><span
+                  style="font-family: &quot;Orbitron&quot;, monospace; font-size: clamp(13px, 2.5vw, 16px); font-weight: 900; color: rgb(52, 211, 153);">$0.00</span>
+              </div>
+            </div>
+          </div>
+          <style>
+            @import url("css2.css");
+
+            @keyframes lrPulse {
+
+              0%,
+              100% {
+                opacity: 0.5;
+              }
+
+              50% {
+                opacity: 1;
+              }
+            }
+          </style>
+          <div
+            style="display: flex; flex-direction: column; gap: 1.25rem; font-family: &quot;Rajdhani&quot;, sans-serif;">
+            <div
+              style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 0.75rem;">
+              <div>
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                  <div
+                    style="width: 32px; height: 32px; border-radius: 9px; display: flex; align-items: center; justify-content: center; background: rgba(167, 139, 250, 0.1); border: 1px solid rgba(167, 139, 250, 0.22);">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"
+                      stroke-linecap="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div><span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1.1rem, 3vw, 1.45rem); background: linear-gradient(135deg, rgb(240, 249, 255), rgb(167, 139, 250)) padding-box text; -webkit-text-fill-color: transparent;">LEG
+                    RANKS</span>
+                </div>
+              </div>
+              <div
+                style="display: flex; align-items: center; gap: 14px; padding: 10px 16px; border-radius: 12px; background: rgba(167, 139, 250, 0.07); border: 1px solid rgba(167, 139, 250, 0.16);">
+                <div style="text-align: center;">
+                  <div
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1.1rem, 3vw, 1.4rem); color: rgb(240, 249, 255); line-height: 1;">
+                    0</div>
+                  <div
+                    style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(56, 189, 248, 0.5); letter-spacing: 1px; margin-top: 2px;">
+                    DIRECT TEAM</div>
+                </div>
+                <div style="width: 1px; height: 32px; background: rgba(167, 139, 250, 0.15);"></div>
+                <div style="text-align: center;">
+                  <div
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1.1rem, 3vw, 1.4rem); color: rgb(167, 139, 250); line-height: 1;">
+                    0</div>
+                  <div
+                    style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(167, 139, 250, 0.5); letter-spacing: 1px; margin-top: 2px;">
+                    RANKED (V1+)</div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="border-radius: 14px; padding: 12px 14px; background: rgba(56, 189, 248, 0.04); border: 1px solid rgba(56, 189, 248, 0.09); display: flex; align-items: flex-start; gap: 10px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"
+                stroke-linecap="round" style="margin-top: 2px; flex-shrink: 0;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg><span
+                style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: clamp(12px, 2vw, 14px); color: rgba(186, 210, 235, 0.65); font-weight: 500; line-height: 1.55;">Counts
+                are <strong style="color: rgb(240, 249, 255);">cumulative</strong> — a direct team member at <strong
+                  style="color: rgb(167, 139, 250);">V5</strong> counts toward V1 through V5. For <strong
+                  style="color: rgb(251, 191, 36);">ranks 11–15</strong>, you need <strong
+                  style="color: rgb(251, 191, 36);">3 legs</strong> at the prior rank to unlock.</span>
+            </div>
+            <div
+              style="border-radius: 18px; padding: clamp(1rem, 3vw, 1.4rem); background: rgba(167, 139, 250, 0.03); border: 1px solid rgba(167, 139, 250, 0.08);">
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <div
+                  style="border-radius: 14px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; display: flex; align-items: center; gap: 12px;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.85rem; color: rgba(100, 116, 139, 0.45);">V1</span>
+                  </div>
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                      <span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: rgba(148, 163, 184, 0.4);">V1+
+                        legs</span><span
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.3rem); color: rgba(100, 116, 139, 0.4);">0</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 4%; border-radius: 3px; background: transparent; box-shadow: none; transition: width 0.7s;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="border-radius: 14px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; display: flex; align-items: center; gap: 12px;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.85rem; color: rgba(100, 116, 139, 0.45);">V2</span>
+                  </div>
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                      <span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: rgba(148, 163, 184, 0.4);">V2+
+                        legs</span><span
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.3rem); color: rgba(100, 116, 139, 0.4);">0</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 4%; border-radius: 3px; background: transparent; box-shadow: none; transition: width 0.7s;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="border-radius: 14px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; display: flex; align-items: center; gap: 12px;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.85rem; color: rgba(100, 116, 139, 0.45);">V3</span>
+                  </div>
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                      <span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: rgba(148, 163, 184, 0.4);">V3+
+                        legs</span><span
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.3rem); color: rgba(100, 116, 139, 0.4);">0</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 4%; border-radius: 3px; background: transparent; box-shadow: none; transition: width 0.7s;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="border-radius: 14px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; display: flex; align-items: center; gap: 12px;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.85rem; color: rgba(100, 116, 139, 0.45);">V4</span>
+                  </div>
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                      <span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: rgba(148, 163, 184, 0.4);">V4+
+                        legs</span><span
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.3rem); color: rgba(100, 116, 139, 0.4);">0</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 4%; border-radius: 3px; background: transparent; box-shadow: none; transition: width 0.7s;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="border-radius: 14px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; display: flex; align-items: center; gap: 12px;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.85rem; color: rgba(100, 116, 139, 0.45);">V5</span>
+                  </div>
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                      <span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: rgba(148, 163, 184, 0.4);">V5+
+                        legs</span><span
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.3rem); color: rgba(100, 116, 139, 0.4);">0</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 4%; border-radius: 3px; background: transparent; box-shadow: none; transition: width 0.7s;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="border-radius: 14px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; display: flex; align-items: center; gap: 12px;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.85rem; color: rgba(100, 116, 139, 0.45);">V6</span>
+                  </div>
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                      <span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: rgba(148, 163, 184, 0.4);">V6+
+                        legs</span><span
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.3rem); color: rgba(100, 116, 139, 0.4);">0</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 4%; border-radius: 3px; background: transparent; box-shadow: none; transition: width 0.7s;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="border-radius: 14px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; display: flex; align-items: center; gap: 12px;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.85rem; color: rgba(100, 116, 139, 0.45);">V7</span>
+                  </div>
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                      <span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: rgba(148, 163, 184, 0.4);">V7+
+                        legs</span><span
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.3rem); color: rgba(100, 116, 139, 0.4);">0</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 4%; border-radius: 3px; background: transparent; box-shadow: none; transition: width 0.7s;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="border-radius: 14px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; display: flex; align-items: center; gap: 12px;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.85rem; color: rgba(100, 116, 139, 0.45);">V8</span>
+                  </div>
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                      <span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: rgba(148, 163, 184, 0.4);">V8+
+                        legs</span><span
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.3rem); color: rgba(100, 116, 139, 0.4);">0</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 4%; border-radius: 3px; background: transparent; box-shadow: none; transition: width 0.7s;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="border-radius: 14px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; display: flex; align-items: center; gap: 12px;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.85rem; color: rgba(100, 116, 139, 0.45);">V9</span>
+                  </div>
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                      <span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: rgba(148, 163, 184, 0.4);">V9+
+                        legs</span><span
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.3rem); color: rgba(100, 116, 139, 0.4);">0</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 4%; border-radius: 3px; background: transparent; box-shadow: none; transition: width 0.7s;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="border-radius: 14px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; display: flex; align-items: center; gap: 12px;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.85rem; color: rgba(100, 116, 139, 0.45);">V10</span>
+                  </div>
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                      <span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: rgba(148, 163, 184, 0.4);">V10+
+                        legs</span><span
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.3rem); color: rgba(100, 116, 139, 0.4);">0</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 4%; border-radius: 3px; background: transparent; box-shadow: none; transition: width 0.7s;">
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="flex-shrink: 0; padding: 4px 9px; border-radius: 8px; background: rgba(100, 116, 139, 0.07); border: 1px solid rgba(100, 116, 139, 0.12); display: flex; align-items: center; gap: 4px;">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(100,116,139,0.5)"
+                      stroke-width="2.5">
+                      <circle cx="12" cy="12" r="10"></circle>
+                    </svg><span
+                      style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(100, 116, 139, 0.4); letter-spacing: 0.5px;">0/3</span>
+                  </div>
+                </div>
+                <div
+                  style="border-radius: 14px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; display: flex; align-items: center; gap: 12px;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.85rem; color: rgba(100, 116, 139, 0.45);">V11</span>
+                  </div>
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                      <span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: rgba(148, 163, 184, 0.4);">V11+
+                        legs</span><span
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.3rem); color: rgba(100, 116, 139, 0.4);">0</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 4%; border-radius: 3px; background: transparent; box-shadow: none; transition: width 0.7s;">
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="flex-shrink: 0; padding: 4px 9px; border-radius: 8px; background: rgba(100, 116, 139, 0.07); border: 1px solid rgba(100, 116, 139, 0.12); display: flex; align-items: center; gap: 4px;">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(100,116,139,0.5)"
+                      stroke-width="2.5">
+                      <circle cx="12" cy="12" r="10"></circle>
+                    </svg><span
+                      style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(100, 116, 139, 0.4); letter-spacing: 0.5px;">0/3</span>
+                  </div>
+                </div>
+                <div
+                  style="border-radius: 14px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; display: flex; align-items: center; gap: 12px;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.85rem; color: rgba(100, 116, 139, 0.45);">V12</span>
+                  </div>
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                      <span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: rgba(148, 163, 184, 0.4);">V12+
+                        legs</span><span
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.3rem); color: rgba(100, 116, 139, 0.4);">0</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 4%; border-radius: 3px; background: transparent; box-shadow: none; transition: width 0.7s;">
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="flex-shrink: 0; padding: 4px 9px; border-radius: 8px; background: rgba(100, 116, 139, 0.07); border: 1px solid rgba(100, 116, 139, 0.12); display: flex; align-items: center; gap: 4px;">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(100,116,139,0.5)"
+                      stroke-width="2.5">
+                      <circle cx="12" cy="12" r="10"></circle>
+                    </svg><span
+                      style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(100, 116, 139, 0.4); letter-spacing: 0.5px;">0/3</span>
+                  </div>
+                </div>
+                <div
+                  style="border-radius: 14px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; display: flex; align-items: center; gap: 12px;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.85rem; color: rgba(100, 116, 139, 0.45);">V13</span>
+                  </div>
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                      <span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: rgba(148, 163, 184, 0.4);">V13+
+                        legs</span><span
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.3rem); color: rgba(100, 116, 139, 0.4);">0</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 4%; border-radius: 3px; background: transparent; box-shadow: none; transition: width 0.7s;">
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="flex-shrink: 0; padding: 4px 9px; border-radius: 8px; background: rgba(100, 116, 139, 0.07); border: 1px solid rgba(100, 116, 139, 0.12); display: flex; align-items: center; gap: 4px;">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(100,116,139,0.5)"
+                      stroke-width="2.5">
+                      <circle cx="12" cy="12" r="10"></circle>
+                    </svg><span
+                      style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(100, 116, 139, 0.4); letter-spacing: 0.5px;">0/3</span>
+                  </div>
+                </div>
+                <div
+                  style="border-radius: 14px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.3s; display: flex; align-items: center; gap: 12px;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: none;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 0.85rem; color: rgba(100, 116, 139, 0.45);">V14</span>
+                  </div>
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <div
+                      style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                      <span
+                        style="font-family: &quot;Rajdhani&quot;, sans-serif; font-weight: 700; font-size: clamp(13px, 2vw, 15px); color: rgba(148, 163, 184, 0.4);">V14+
+                        legs</span><span
+                        style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: clamp(1rem, 3vw, 1.3rem); color: rgba(100, 116, 139, 0.4);">0</span>
+                    </div>
+                    <div
+                      style="height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                      <div
+                        style="height: 100%; width: 4%; border-radius: 3px; background: transparent; box-shadow: none; transition: width 0.7s;">
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="flex-shrink: 0; padding: 4px 9px; border-radius: 8px; background: rgba(100, 116, 139, 0.07); border: 1px solid rgba(100, 116, 139, 0.12); display: flex; align-items: center; gap: 4px;">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(100,116,139,0.5)"
+                      stroke-width="2.5">
+                      <circle cx="12" cy="12" r="10"></circle>
+                    </svg><span
+                      style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(100, 116, 139, 0.4); letter-spacing: 0.5px;">0/3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="border-radius: 20px; overflow: hidden; background: linear-gradient(135deg, rgba(251, 191, 36, 0.05), rgba(37, 99, 235, 0.03)); border: 1px solid rgba(251, 191, 36, 0.12);">
+            <div
+              style="display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; border-bottom: 1px solid rgba(251, 191, 36, 0.08); flex-wrap: wrap; gap: 10px;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <div
+                  style="width: 34px; height: 34px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: rgba(251, 191, 36, 0.1); border: 1px solid rgba(251, 191, 36, 0.22);">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"
+                    stroke-linecap="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div><span
+                  style="font-family: &quot;Orbitron&quot;, monospace; font-size: 13px; font-weight: 700; color: rgb(240, 249, 255); letter-spacing: 1px;">RANK
+                  PROGRESS</span>
+              </div>
+            </div>
+            <div style="padding: 20px;">
+              <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                  <div
+                    style="position: relative; width: 70px; height: 70px; border-radius: 18px; display: flex; align-items: center; justify-content: center; background: rgba(148, 163, 184, 0.082); border: 2px solid rgba(148, 163, 184, 0.27); box-shadow: none; margin-bottom: 5px;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 1.25rem; color: rgb(148, 163, 184);">—</span>
+                  </div><span
+                    style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(186, 210, 235, 0.4); letter-spacing: 1px;">CURRENT</span>
+                </div>
+                <div style="flex: 1 1 0%; display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                  <div
+                    style="width: 100%; height: 1px; background: linear-gradient(to right, rgba(148, 163, 184, 0.25), rgba(56, 189, 248, 0.25));">
+                  </div><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(186,210,235,0.3)"
+                    stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg><span
+                    style="font-family: &quot;Space Mono&quot;, monospace; font-size: 10px; color: rgba(251, 191, 36, 0.8); font-weight: 700;">0.0%</span>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; opacity: 0.55;">
+                  <div
+                    style="width: 70px; height: 70px; border-radius: 18px; display: flex; align-items: center; justify-content: center; background: rgba(56, 189, 248, 0.063); border: 2px dashed rgba(56, 189, 248, 0.19); margin-bottom: 5px;">
+                    <span
+                      style="font-family: &quot;Orbitron&quot;, monospace; font-weight: 900; font-size: 1.25rem; color: rgb(56, 189, 248);">V1</span>
+                  </div><span
+                    style="font-family: &quot;Space Mono&quot;, monospace; font-size: 8px; color: rgba(186, 210, 235, 0.4); letter-spacing: 1px;">NEXT</span>
+                </div>
+              </div>
+              <div style="margin-bottom: 22px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px;"><span
+                    style="font-family: &quot;Rajdhani&quot;, sans-serif; font-size: 14px; font-weight: 600; color: rgba(186, 210, 235, 0.65);">Matching
+                    Progress</span><span
+                    style="font-family: &quot;Space Mono&quot;, monospace; font-size: 10px; color: rgba(251, 191, 36, 0.8);">$0.00
+                    / $600.00</span></div>
+                <div style="height: 8px; border-radius: 4px; overflow: hidden; background: rgba(255, 255, 255, 0.06);">
+                  <div
+                    style="height: 100%; border-radius: 4px; width: 0%; background: linear-gradient(to right, rgb(251, 191, 36), rgb(249, 115, 22)); box-shadow: rgba(251, 191, 36, 0.4) 0px 0px 10px; transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);">
+                  </div>
+                </div>
+              </div>
+              <div
+                style="font-family: &quot;Space Mono&quot;, monospace; font-size: 9px; letter-spacing: 2.5px; color: rgba(251, 191, 36, 0.4); text-transform: uppercase; margin-bottom: 12px;">
+                All Ranks</div>
+              <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px;">
+                <div
+                  style="position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: none; transition: 0.2s;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: 10px; font-weight: 700; color: rgba(100, 116, 139, 0.35);">V1</span>
+                </div>
+                <div
+                  style="position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: none; transition: 0.2s;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: 10px; font-weight: 700; color: rgba(100, 116, 139, 0.35);">V2</span>
+                </div>
+                <div
+                  style="position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: none; transition: 0.2s;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: 10px; font-weight: 700; color: rgba(100, 116, 139, 0.35);">V3</span>
+                </div>
+                <div
+                  style="position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: none; transition: 0.2s;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: 10px; font-weight: 700; color: rgba(100, 116, 139, 0.35);">V4</span>
+                </div>
+                <div
+                  style="position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: none; transition: 0.2s;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: 10px; font-weight: 700; color: rgba(100, 116, 139, 0.35);">V5</span>
+                </div>
+                <div
+                  style="position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: none; transition: 0.2s;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: 10px; font-weight: 700; color: rgba(100, 116, 139, 0.35);">V6</span>
+                </div>
+                <div
+                  style="position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: none; transition: 0.2s;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: 10px; font-weight: 700; color: rgba(100, 116, 139, 0.35);">V7</span>
+                </div>
+                <div
+                  style="position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: none; transition: 0.2s;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: 10px; font-weight: 700; color: rgba(100, 116, 139, 0.35);">V8</span>
+                </div>
+                <div
+                  style="position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: none; transition: 0.2s;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: 10px; font-weight: 700; color: rgba(100, 116, 139, 0.35);">V9</span>
+                </div>
+                <div
+                  style="position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: none; transition: 0.2s;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: 10px; font-weight: 700; color: rgba(100, 116, 139, 0.35);">V10</span>
+                </div>
+                <div
+                  style="position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: none; transition: 0.2s;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: 10px; font-weight: 700; color: rgba(100, 116, 139, 0.35);">V11</span>
+                </div>
+                <div
+                  style="position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: none; transition: 0.2s;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: 10px; font-weight: 700; color: rgba(100, 116, 139, 0.35);">V12</span>
+                </div>
+                <div
+                  style="position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: none; transition: 0.2s;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: 10px; font-weight: 700; color: rgba(100, 116, 139, 0.35);">V13</span>
+                </div>
+                <div
+                  style="position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: none; transition: 0.2s;">
+                  <span
+                    style="font-family: &quot;Orbitron&quot;, monospace; font-size: 10px; font-weight: 700; color: rgba(100, 116, 139, 0.35);">V14</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="flex flex-col sm:flex-row items-center justify-between gap-3 px-6 sm:px-8 py-4 border-t border-cyan-400/[0.06]">
+        <p class="text-[10px] tracking-[3px] text-slate-600 uppercase text-center sm:text-left"
+          style="font-family: &quot;Space Mono&quot;, monospace;">© 2026 Smart Solve DeFi · All rights reserved</p>
+        <div class="flex items-center gap-2"><span
+            class="w-1.5 h-1.5 rounded-full bg-emerald-400 shadow-[0_0_6px_#34d399]"></span>
+          <p class="text-[10px] tracking-[2px] text-slate-600 uppercase"
+            style="font-family: &quot;Space Mono&quot;, monospace;">BSC Network · SST Token</p>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <div data-rht-toaster=""
+    style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none"></div>
+  <djj-arhowraadhra
+    data-scrapbook-shadowdom="&lt;link rel=&quot;stylesheet&quot; href=&quot;5PmV-5giEgHvLZ8eVdJCpBIUyLBY7V5cBTilnsb3FjnKgfBXWdilY4cRsHNTH0hcXpVSdj6L_kbZbUH-MhFFnowKM2ZGYfsQV5NzE4TzQBcMD6KWqzTFALpV.css&quot;&gt;"
+    data-scrapbook-shadowdom-mode="closed"></djj-arhowraadhra><next-route-announcer style="position: absolute;"
+    data-scrapbook-shadowdom="&lt;div aria-live=&quot;assertive&quot; id=&quot;__next-route-announcer__&quot; role=&quot;alert&quot; style=&quot;position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;&quot;&gt;&lt;/div&gt;"></next-route-announcer><w3m-modal
+    style="--local-modal-padding: var(--apkt-spacing-1); z-index: 999999;" data-border="false"
+    data-scrapbook-adoptedstylesheets="1" data-scrapbook-shadowdom="&lt;!----&gt;"></w3m-modal>
+  <script
+    data-scrapbook-elem="basic-loader">(function () { var k1 = "data-scrapbook-shadowdom", k2 = "data-scrapbook-canvas", k3 = "data-scrapbook-input-indeterminate", k4 = "data-scrapbook-input-checked", k5 = "data-scrapbook-option-selected", k6 = "data-scrapbook-input-value", k7 = "data-scrapbook-textarea-value", k8 = "data-scrapbook-adoptedstylesheets", k9 = /^data-scrapbook-adoptedstylesheet-(\d+)$/, k10 = "data-scrapbook-shadowdom-mode", k11 = "data-scrapbook-shadowdom-clonable", k12 = "data-scrapbook-shadowdom-delegates-focus", k13 = "data-scrapbook-shadowdom-serializable", k14 = "data-scrapbook-shadowdom-slot-assignment", k15 = "data-scrapbook-slot-assigned", k16 = "data-scrapbook-slot-index", k17 = /^scrapbook-slot-index=(\d+)$/, k18 = '/scrapbook-slot-index', d = document, r = d.documentElement, $s = !!r.attachShadow, $as = !!d.adoptedStyleSheets, $c = !!window.HTMLCanvasElement, $sa = !!d.createElement('slot').assign, sle = [], sls = [], slt = function (r) { if ($sa) { var E = r.childNodes, i, e, s, m; for (i = 0; i < E.length; i++) { e = E[i]; if (e.nodeType === 8) { s = e.nodeValue; if (m = s.match(k17)) { s = e.nextSibling; if (s.nodeType === 3) { sls[m[1]] = s; } r.removeChild(e); i--; } else if (s === k18) { r.removeChild(e); i--; } } } } }, sl = function () { var i = sle.length, j, d, e; while (i--) { d = sle[i]; e = d.elem; d = d.value.split(','); j = d.length; while (j--) { d[j] = sls[parseInt(d[j], 10)]; } try { try { e.assign.apply(e, d); } catch (ex) { if (ex.message.includes('must have a callable @@iterator')) { e.assign(d); } else { throw ex; } } } catch (ex) { console.error(ex); } } }, asl = (function (r) { var l = [], E, i, e, m, c, j; if ($as) { E = r.attributes; i = E.length; while (i--) { e = E[i]; if (!(m = e.nodeName.match(k9))) { continue; } c = l[m[1]] = new CSSStyleSheet(); r.removeAttribute(m[0]); m = e.nodeValue.split('\n\n'); j = m.length; while (j--) { try { m[j] && c.insertRule(m[j]); } catch (ex) { console.error(ex); } } } } return l; })(r), as = function (d, e) { var l, i, I; if ($as && (l = e.getAttribute(k8)) !== null) { l = l.split(',').map(i => asl[i]); d.adoptedStyleSheets = d.adoptedStyleSheets.concat(l); e.removeAttribute(k8); } }, fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s, m; while (i--) { e = E[i]; s = e.shadowRoot; if ($s && (d = e.getAttribute(k1))) { if (!s) { try { s = e.attachShadow({ mode: (m = e.getAttribute(k10)) !== null ? m : 'open', clonable: e.hasAttribute(k11), delegatesFocus: e.hasAttribute(k12), serializable: e.hasAttribute(k13), slotAssignment: (m = e.getAttribute(k14)) !== null ? m : void 0, }); s.innerHTML = d; } catch (ex) { console.error(ex); } } e.removeAttribute(k1); e.removeAttribute(k10); e.removeAttribute(k11); e.removeAttribute(k12); e.removeAttribute(k13); e.removeAttribute(k14); } if ($c && (d = e.getAttribute(k2)) !== null) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = d; })(); e.removeAttribute(k2); } if ((d = e.getAttribute(k3)) !== null) { e.indeterminate = true; e.removeAttribute(k3); } if ((d = e.getAttribute(k4)) !== null) { e.checked = d === 'true'; e.removeAttribute(k4); } if ((d = e.getAttribute(k5)) !== null) { e.selected = d === 'true'; e.removeAttribute(k5); } if ((d = e.getAttribute(k6)) !== null) { e.value = d; e.removeAttribute(k6); } if ((d = e.getAttribute(k7)) !== null) { e.value = d; e.removeAttribute(k7); } if ($sa && (d = e.getAttribute(k15)) !== null) { sle.push({ elem: e, value: d }); e.removeAttribute(k15); } if ($sa && (d = e.getAttribute(k16)) !== null) { sls[d] = e; e.removeAttribute(k16); } if (s) { slt(e); as(s, e); fn(s); } } }; as(d, r); fn(d); sl(); })()</script>
+</body>
+
+</html>
